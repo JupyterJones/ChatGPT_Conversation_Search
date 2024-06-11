@@ -1,0 +1,18 @@
+Test recording for both.
+user
+Well, I'm testing the recording right now to see if it can record my voice and you at the same time.
+ChatGPT
+That sounds like a good test. Let me know how it goes!
+user
+Okay, you're speaking mighty fast.
+ChatGPT
+Got it, I'll slow down a bit. Is this pace better for you?
+user
+Better. Much better.
+ChatGPT
+Great, glad to hear that! Let me know if you need any adjustments or if you have any other questions.
+user
+Okay, I'm going to see if it's recording now. Goodbye.
+ChatGPT
+Sure thing! Goodbye for now.
+

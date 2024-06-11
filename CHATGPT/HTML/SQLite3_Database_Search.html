@@ -1,0 +1,707 @@
+SQLite3 Database Search<br />
+user<br />
+How can I search an Sqlite3 database using common sentences?<br />
+ChatGPT<br />
+Searching an SQLite3 database using common sentences involves parsing the input sentences and converting them into SQL queries that can be executed against the database. This process typically includes:<br />
+<br />
+1. Tokenizing the input sentence to identify keywords and phrases.<br />
+2. Mapping these keywords and phrases to the corresponding columns in the database.<br />
+3. Constructing an SQL query based on the identified keywords and their mappings.<br />
+<br />
+Below is an example of how you can achieve this using Python:<br />
+<br />
+1. **Set up the SQLite3 database**: Create a sample database and table for demonstration purposes.<br />
+<br />
+2. **Define a function to convert sentences into SQL queries**.<br />
+<br />
+3. **Execute the query and fetch results**.<br />
+<br />
+Here's a complete script that demonstrates these steps:<br />
+<br />
+### Step 1: Set up the SQLite3 Database<br />
+<br />
+First, let's create a sample SQLite3 database and populate it with some data:<br />
+<br />
+```python<br />
+import sqlite3<br />
+<br />
+# Connect to the SQLite database (or create it if it doesn't exist)<br />
+conn = sqlite3.connect('example.db')<br />
+cursor = conn.cursor()<br />
+<br />
+# Create a sample table<br />
+cursor.execute('''<br />
+CREATE TABLE IF NOT EXISTS people (<br />
+    id INTEGER PRIMARY KEY,<br />
+    name TEXT,<br />
+    age INTEGER,<br />
+    city TEXT<br />
+)<br />
+''')<br />
+<br />
+# Insert some sample data<br />
+cursor.execute("INSERT INTO people (name, age, city) VALUES ('Alice', 30, 'New York')")<br />
+cursor.execute("INSERT INTO people (name, age, city) VALUES ('Bob', 25, 'Los Angeles')")<br />
+cursor.execute("INSERT INTO people (name, age, city) VALUES ('Charlie', 35, 'Chicago')")<br />
+cursor.execute("INSERT INTO people (name, age, city) VALUES ('Diana', 40, 'San Francisco')")<br />
+<br />
+# Commit the changes and close the connection<br />
+conn.commit()<br />
+conn.close()<br />
+```<br />
+<br />
+### Step 2: Define a Function to Convert Sentences into SQL Queries<br />
+<br />
+Now, let's define a function that takes a common sentence and converts it into an SQL query:<br />
+<br />
+```python<br />
+import sqlite3<br />
+import re<br />
+<br />
+def search_database(sentence):<br />
+    # Connect to the SQLite database<br />
+    conn = sqlite3.connect('example.db')<br />
+    cursor = conn.cursor()<br />
+<br />
+    # Define simple mappings from keywords to SQL fields<br />
+    field_mappings = {<br />
+        'name': 'name',<br />
+        'age': 'age',<br />
+        'city': 'city'<br />
+    }<br />
+<br />
+    # Tokenize the input sentence<br />
+    tokens = sentence.lower().split()<br />
+    <br />
+    # Initialize query components<br />
+    select_clause = "SELECT * FROM people"<br />
+    where_clause = []<br />
+    params = []<br />
+<br />
+    # Extract potential field-value pairs from the sentence<br />
+    for i in range(len(tokens)):<br />
+        if tokens[i] in field_mappings:<br />
+            field = field_mappings[tokens[i]]<br />
+            # Assume the next token is the value<br />
+            if i + 1 &lt; len(tokens):<br />
+                value = tokens[i + 1]<br />
+                if re.match(r'^\d+$', value):  # Check if the value is an integer<br />
+                    where_clause.append(f"{field} = ?")<br />
+                    params.append(int(value))<br />
+                else:<br />
+                    where_clause.append(f"{field} = ?")<br />
+                    params.append(value.capitalize())<br />
+    <br />
+    # Construct the final query<br />
+    if where_clause:<br />
+        query = f"{select_clause} WHERE {' AND '.join(where_clause)}"<br />
+    else:<br />
+        query = select_clause<br />
+<br />
+    # Execute the query<br />
+    cursor.execute(query, tuple(params))<br />
+    results = cursor.fetchall()<br />
+<br />
+    # Close the connection<br />
+    conn.close()<br />
+<br />
+    return results<br />
+<br />
+# Example usage<br />
+sentence = "name Alice city New York"<br />
+results = search_database(sentence)<br />
+for row in results:<br />
+    print(row)<br />
+```<br />
+<br />
+### Step 3: Execute the Query and Fetch Results<br />
+<br />
+Finally, let's run the script and see how it works:<br />
+<br />
+```python<br />
+# Example usage<br />
+sentence = "name Alice city New York"<br />
+results = search_database(sentence)<br />
+for row in results:<br />
+    print(row)<br />
+```<br />
+<br />
+When you run this script, it should print the following result:<br />
+<br />
+```<br />
+(1, 'Alice', 30, 'New York')<br />
+```<br />
+<br />
+### Explanation<br />
+<br />
+1. **Database Setup**: The script sets up an SQLite database with a table `people` and inserts some sample data.<br />
+<br />
+2. **Sentence Parsing**: The `search_database` function tokenizes the input sentence and maps the tokens to SQL fields.<br />
+<br />
+3. **Query Construction**: The function constructs an SQL query based on the tokens and their corresponding fields and values.<br />
+<br />
+4. **Query Execution**: The constructed query is executed, and the results are fetched and returned.<br />
+<br />
+This script is a simple example and can be extended to handle more complex sentences and various conditions.<br />
+user<br />
+I am searching a database of Python flask declarations and functions.<br />
+ChatGPT<br />
+To search a database of Python Flask declarations and functions using common sentences, you can follow a similar approach to the one described earlier. The main difference will be the structure of your database and the specific fields you want to query.<br />
+<br />
+Let's assume you have a database with a table `flask_functions` that stores information about Flask declarations and functions. The table might have columns like `id`, `function_name`, `endpoint`, `methods`, and `description`.<br />
+<br />
+Here's a step-by-step guide to create the database, populate it with sample data, and define a function to search it using common sentences:<br />
+<br />
+### Step 1: Set up the SQLite3 Database<br />
+<br />
+First, let's create a sample SQLite3 database and populate it with some data:<br />
+<br />
+```python<br />
+import sqlite3<br />
+<br />
+# Connect to the SQLite database (or create it if it doesn't exist)<br />
+conn = sqlite3.connect('flask_functions.db')<br />
+cursor = conn.cursor()<br />
+<br />
+# Create a sample table<br />
+cursor.execute('''<br />
+CREATE TABLE IF NOT EXISTS flask_functions (<br />
+    id INTEGER PRIMARY KEY,<br />
+    function_name TEXT,<br />
+    endpoint TEXT,<br />
+    methods TEXT,<br />
+    description TEXT<br />
+)<br />
+''')<br />
+<br />
+# Insert some sample data<br />
+cursor.execute("INSERT INTO flask_functions (function_name, endpoint, methods, description) VALUES ('home', '/', 'GET', 'Home page')")<br />
+cursor.execute("INSERT INTO flask_functions (function_name, endpoint, methods, description) VALUES ('login', '/login', 'GET, POST', 'User login page')")<br />
+cursor.execute("INSERT INTO flask_functions (function_name, endpoint, methods, description) VALUES ('logout', '/logout', 'POST', 'User logout')")<br />
+cursor.execute("INSERT INTO flask_functions (function_name, endpoint, methods, description) VALUES ('profile', '/profile', 'GET', 'User profile page')")<br />
+<br />
+# Commit the changes and close the connection<br />
+conn.commit()<br />
+conn.close()<br />
+```<br />
+<br />
+### Step 2: Define a Function to Convert Sentences into SQL Queries<br />
+<br />
+Now, let's define a function that takes a common sentence and converts it into an SQL query:<br />
+<br />
+```python<br />
+import sqlite3<br />
+import re<br />
+<br />
+def search_flask_functions(sentence):<br />
+    # Connect to the SQLite database<br />
+    conn = sqlite3.connect('flask_functions.db')<br />
+    cursor = conn.cursor()<br />
+<br />
+    # Define simple mappings from keywords to SQL fields<br />
+    field_mappings = {<br />
+        'function': 'function_name',<br />
+        'endpoint': 'endpoint',<br />
+        'method': 'methods',<br />
+        'description': 'description'<br />
+    }<br />
+<br />
+    # Tokenize the input sentence<br />
+    tokens = sentence.lower().split()<br />
+    <br />
+    # Initialize query components<br />
+    select_clause = "SELECT * FROM flask_functions"<br />
+    where_clause = []<br />
+    params = []<br />
+<br />
+    # Extract potential field-value pairs from the sentence<br />
+    for i in range(len(tokens)):<br />
+        if tokens[i] in field_mappings:<br />
+            field = field_mappings[tokens[i]]<br />
+            # Assume the next token is the value<br />
+            if i + 1 &lt; len(tokens):<br />
+                value = tokens[i + 1]<br />
+                if re.match(r'^\d+$', value):  # Check if the value is an integer<br />
+                    where_clause.append(f"{field} = ?")<br />
+                    params.append(int(value))<br />
+                else:<br />
+                    where_clause.append(f"{field} LIKE ?")<br />
+                    params.append('%' + value + '%')<br />
+    <br />
+    # Construct the final query<br />
+    if where_clause:<br />
+        query = f"{select_clause} WHERE {' AND '.join(where_clause)}"<br />
+    else:<br />
+        query = select_clause<br />
+<br />
+    # Execute the query<br />
+    cursor.execute(query, tuple(params))<br />
+    results = cursor.fetchall()<br />
+<br />
+    # Close the connection<br />
+    conn.close()<br />
+<br />
+    return results<br />
+<br />
+# Example usage<br />
+sentence = "function login method POST"<br />
+results = search_flask_functions(sentence)<br />
+for row in results:<br />
+    print(row)<br />
+```<br />
+<br />
+### Step 3: Execute the Query and Fetch Results<br />
+<br />
+Let's run the script and see how it works:<br />
+<br />
+```python<br />
+# Example usage<br />
+sentence = "function login method POST"<br />
+results = search_flask_functions(sentence)<br />
+for row in results:<br />
+    print(row)<br />
+```<br />
+<br />
+When you run this script, it should print the following result if it matches the criteria:<br />
+<br />
+```<br />
+(2, 'login', '/login', 'GET, POST', 'User login page')<br />
+```<br />
+<br />
+### Explanation<br />
+<br />
+1. **Database Setup**: The script sets up an SQLite database with a table `flask_functions` and inserts some sample data.<br />
+<br />
+2. **Sentence Parsing**: The `search_flask_functions` function tokenizes the input sentence and maps the tokens to SQL fields.<br />
+<br />
+3. **Query Construction**: The function constructs an SQL query based on the tokens and their corresponding fields and values. The `LIKE` operator is used to allow partial matches.<br />
+<br />
+4. **Query Execution**: The constructed query is executed, and the results are fetched and returned.<br />
+<br />
+This script is a simple example and can be extended to handle more complex sentences and various conditions. You can add more sophisticated natural language processing (NLP) techniques to improve the sentence parsing and query generation.<br />
+user<br />
+What if I can generate a doc for the functions ?<br />
+ChatGPT<br />
+If you can generate a documentation file (e.g., in JSON or another structured format) for the Flask functions, you can use it to enhance the search functionality. This documentation can include detailed information about each function, such as the function name, endpoint, methods, and description.<br />
+<br />
+Here’s an example of how you can achieve this using JSON for the documentation and searching through it. <br />
+<br />
+### Step 1: Create the Documentation File<br />
+<br />
+Let's assume you have a JSON file named `flask_functions.json` with the following content:<br />
+<br />
+```json<br />
+[<br />
+    {<br />
+        "function_name": "home",<br />
+        "endpoint": "/",<br />
+        "methods": ["GET"],<br />
+        "description": "Home page"<br />
+    },<br />
+    {<br />
+        "function_name": "login",<br />
+        "endpoint": "/login",<br />
+        "methods": ["GET", "POST"],<br />
+        "description": "User login page"<br />
+    },<br />
+    {<br />
+        "function_name": "logout",<br />
+        "endpoint": "/logout",<br />
+        "methods": ["POST"],<br />
+        "description": "User logout"<br />
+    },<br />
+    {<br />
+        "function_name": "profile",<br />
+        "endpoint": "/profile",<br />
+        "methods": ["GET"],<br />
+        "description": "User profile page"<br />
+    }<br />
+]<br />
+```<br />
+<br />
+### Step 2: Load and Search the Documentation<br />
+<br />
+Here is a Python script that loads this JSON file and allows you to search for functions based on common sentences:<br />
+<br />
+```python<br />
+import json<br />
+import re<br />
+import logging<br />
+<br />
+# Configure logging<br />
+logging.basicConfig(level=logging.DEBUG)<br />
+<br />
+def load_documentation(file_path):<br />
+    """Load the Flask function documentation from a JSON file."""<br />
+    with open(file_path, 'r') as file:<br />
+        return json.load(file)<br />
+<br />
+def search_flask_functions(doc, sentence):<br />
+    """Search the Flask functions documentation based on a sentence."""<br />
+    # Define simple mappings from keywords to JSON fields<br />
+    field_mappings = {<br />
+        'function': 'function_name',<br />
+        'endpoint': 'endpoint',<br />
+        'method': 'methods',<br />
+        'description': 'description'<br />
+    }<br />
+<br />
+    # Tokenize the input sentence<br />
+    tokens = sentence.lower().split()<br />
+    <br />
+    # Initialize search criteria<br />
+    criteria = {}<br />
+    <br />
+    # Extract potential field-value pairs from the sentence<br />
+    for i in range(len(tokens)):<br />
+        if tokens[i] in field_mappings:<br />
+            field = field_mappings[tokens[i]]<br />
+            # Assume the next token is the value<br />
+            if i + 1 &lt; len(tokens):<br />
+                value = tokens[i + 1]<br />
+                if field == 'methods':<br />
+                    criteria.setdefault(field, []).append(value.upper())<br />
+                else:<br />
+                    criteria[field] = value.lower()<br />
+    <br />
+    # Log the search criteria<br />
+    logging.debug(f"Search criteria: {criteria}")<br />
+    <br />
+    # Filter the documentation based on the criteria<br />
+    results = []<br />
+    for func in doc:<br />
+        match = True<br />
+        for field, value in criteria.items():<br />
+            if field == 'methods':<br />
+                # Check if any method matches<br />
+                if not any(method.lower() == val.lower() for method in func[field] for val in value):<br />
+                    match = False<br />
+                    break<br />
+            elif isinstance(func[field], list):<br />
+                # Check list fields<br />
+                if not any(val.lower() in item.lower() for item in func[field]):<br />
+                    match = False<br />
+                    break<br />
+            else:<br />
+                # Check string fields<br />
+                if value not in func[field].lower():<br />
+                    match = False<br />
+                    break<br />
+        if match:<br />
+            results.append(func)<br />
+    <br />
+    return results<br />
+<br />
+# Load the documentation<br />
+doc = load_documentation('flask_functions.json')<br />
+<br />
+# Example usage<br />
+sentence = "function login method POST"<br />
+results = search_flask_functions(doc, sentence)<br />
+for row in results:<br />
+    print(row)<br />
+```<br />
+<br />
+### Explanation<br />
+<br />
+1. **Load Documentation**: The `load_documentation` function loads the JSON file containing the Flask function documentation.<br />
+<br />
+2. **Sentence Parsing and Criteria Extraction**: The `search_flask_functions` function tokenizes the input sentence and maps the tokens to the fields in the JSON data. It extracts the criteria based on the tokens.<br />
+<br />
+3. **Search Criteria Logging**: The script logs the extracted search criteria using the `logging` module for debugging purposes.<br />
+<br />
+4. **Filter the Documentation**: The function filters the loaded documentation based on the extracted criteria. It supports partial matches and handles both string and list fields.<br />
+<br />
+5. **Search and Display Results**: The script performs the search based on the input sentence and displays the matching results.<br />
+<br />
+This approach leverages the structured documentation in JSON format to perform efficient searches, providing flexibility in handling various search queries.<br />
+user<br />
+My main source is conversation conversations.json from ChatGPT <br />
+ChatGPT<br />
+Got it. If your main source of data is a `conversations.json` file generated from ChatGPT interactions, we can adapt the script to read this JSON file and search through it based on common sentences. Here’s a detailed guide:<br />
+<br />
+### Step 1: Create a Sample `conversations.json` File<br />
+<br />
+First, let's assume you have a `conversations.json` file with the following structure:<br />
+<br />
+```json<br />
+[<br />
+    {<br />
+        "function_name": "home",<br />
+        "endpoint": "/",<br />
+        "methods": ["GET"],<br />
+        "description": "Home page"<br />
+    },<br />
+    {<br />
+        "function_name": "login",<br />
+        "endpoint": "/login",<br />
+        "methods": ["GET", "POST"],<br />
+        "description": "User login page"<br />
+    },<br />
+    {<br />
+        "function_name": "logout",<br />
+        "endpoint": "/logout",<br />
+        "methods": ["POST"],<br />
+        "description": "User logout"<br />
+    },<br />
+    {<br />
+        "function_name": "profile",<br />
+        "endpoint": "/profile",<br />
+        "methods": ["GET"],<br />
+        "description": "User profile page"<br />
+    }<br />
+]<br />
+```<br />
+<br />
+### Step 2: Load and Search the JSON File<br />
+<br />
+Here is a Python script that loads this `conversations.json` file and allows you to search for functions based on common sentences:<br />
+<br />
+```python<br />
+import json<br />
+import re<br />
+import logging<br />
+<br />
+# Configure logging<br />
+logging.basicConfig(level=logging.DEBUG)<br />
+<br />
+def load_conversations(file_path):<br />
+    """Load the Flask function conversations from a JSON file."""<br />
+    with open(file_path, 'r') as file:<br />
+        return json.load(file)<br />
+<br />
+def search_flask_functions(conversations, sentence):<br />
+    """Search the Flask functions conversations based on a sentence."""<br />
+    # Define simple mappings from keywords to JSON fields<br />
+    field_mappings = {<br />
+        'function': 'function_name',<br />
+        'endpoint': 'endpoint',<br />
+        'method': 'methods',<br />
+        'description': 'description'<br />
+    }<br />
+<br />
+    # Tokenize the input sentence<br />
+    tokens = sentence.lower().split()<br />
+    <br />
+    # Initialize search criteria<br />
+    criteria = {}<br />
+    <br />
+    # Extract potential field-value pairs from the sentence<br />
+    for i in range(len(tokens)):<br />
+        if tokens[i] in field_mappings:<br />
+            field = field_mappings[tokens[i]]<br />
+            # Assume the next token is the value<br />
+            if i + 1 &lt; len(tokens):<br />
+                value = tokens[i + 1]<br />
+                if field == 'methods':<br />
+                    criteria.setdefault(field, []).append(value.upper())<br />
+                else:<br />
+                    criteria[field] = value.lower()<br />
+    <br />
+    # Log the search criteria<br />
+    logging.debug(f"Search criteria: {criteria}")<br />
+    <br />
+    # Filter the conversations based on the criteria<br />
+    results = []<br />
+    for func in conversations:<br />
+        match = True<br />
+        for field, value in criteria.items():<br />
+            if field == 'methods':<br />
+                # Check if any method matches<br />
+                if not any(method.lower() == val.lower() for method in func[field] for val in value):<br />
+                    match = False<br />
+                    break<br />
+            elif isinstance(func[field], list):<br />
+                # Check list fields<br />
+                if not any(val.lower() in item.lower() for item in func[field]):<br />
+                    match = False<br />
+                    break<br />
+            else:<br />
+                # Check string fields<br />
+                if value not in func[field].lower():<br />
+                    match = False<br />
+                    break<br />
+        if match:<br />
+            results.append(func)<br />
+    <br />
+    return results<br />
+<br />
+# Load the conversations<br />
+conversations = load_conversations('conversations.json')<br />
+<br />
+# Example usage<br />
+sentence = "function login method POST"<br />
+results = search_flask_functions(conversations, sentence)<br />
+for row in results:<br />
+    print(row)<br />
+```<br />
+<br />
+### Explanation<br />
+<br />
+1. **Load Conversations**: The `load_conversations` function loads the JSON file containing the Flask function conversations.<br />
+<br />
+2. **Sentence Parsing and Criteria Extraction**: The `search_flask_functions` function tokenizes the input sentence and maps the tokens to the fields in the JSON data. It extracts the criteria based on the tokens.<br />
+<br />
+3. **Search Criteria Logging**: The script logs the extracted search criteria using the `logging` module for debugging purposes.<br />
+<br />
+4. **Filter the Conversations**: The function filters the loaded conversations based on the extracted criteria. It supports partial matches and handles both string and list fields.<br />
+<br />
+5. **Search and Display Results**: The script performs the search based on the input sentence and displays the matching results.<br />
+<br />
+### Example `conversations.json`<br />
+<br />
+For the script to work, ensure you have a `conversations.json` file with a structure similar to the provided example.<br />
+<br />
+### Running the Script<br />
+<br />
+To run the script, save it to a Python file (e.g., `search_flask_functions.py`), ensure your `conversations.json` is in the same directory, and execute the script:<br />
+<br />
+```sh<br />
+python search_flask_functions.py<br />
+```<br />
+<br />
+The output will display the matching Flask functions based on the input sentence. This approach leverages the structured documentation in JSON format to perform efficient searches, providing flexibility in handling various search queries.<br />
+user<br />
+I have converted the entire conversations.json to a very Hunan readable text and use usr as delimiters each session is e entered into the database <br />
+ChatGPT<br />
+Given that your `conversations.json` has been converted into a human-readable text format with `usr` as delimiters for each session and stored in a database, you can create a Python script to search this database based on common sentences.<br />
+<br />
+Here’s how you can achieve this:<br />
+<br />
+### Step 1: Set up the SQLite Database<br />
+<br />
+First, create the SQLite database and a table to store the session data.<br />
+<br />
+```python<br />
+import sqlite3<br />
+<br />
+# Connect to the SQLite database (or create it if it doesn't exist)<br />
+conn = sqlite3.connect('conversations.db')<br />
+cursor = conn.cursor()<br />
+<br />
+# Create a table for storing conversations<br />
+cursor.execute('''<br />
+CREATE TABLE IF NOT EXISTS sessions (<br />
+    id INTEGER PRIMARY KEY,<br />
+    session_text TEXT<br />
+)<br />
+''')<br />
+<br />
+# Example: Insert sample data (replace this with your actual data loading logic)<br />
+sample_sessions = [<br />
+    "usr: Function: home\nEndpoint: /\nMethods: GET\nDescription: Home page",<br />
+    "usr: Function: login\nEndpoint: /login\nMethods: GET, POST\nDescription: User login page",<br />
+    "usr: Function: logout\nEndpoint: /logout\nMethods: POST\nDescription: User logout",<br />
+    "usr: Function: profile\nEndpoint: /profile\nMethods: GET\nDescription: User profile page"<br />
+]<br />
+<br />
+for session in sample_sessions:<br />
+    cursor.execute("INSERT INTO sessions (session_text) VALUES (?)", (session,))<br />
+<br />
+# Commit the changes and close the connection<br />
+conn.commit()<br />
+conn.close()<br />
+```<br />
+<br />
+### Step 2: Define a Function to Search the Database<br />
+<br />
+Now, define a function to search the SQLite database based on a common sentence:<br />
+<br />
+```python<br />
+import sqlite3<br />
+import re<br />
+import logging<br />
+<br />
+# Configure logging<br />
+logging.basicConfig(level=logging.DEBUG)<br />
+<br />
+def search_sessions(sentence):<br />
+    # Connect to the SQLite database<br />
+    conn = sqlite3.connect('conversations.db')<br />
+    cursor = conn.cursor()<br />
+<br />
+    # Define simple mappings from keywords to search terms<br />
+    field_mappings = {<br />
+        'function': 'Function:',<br />
+        'endpoint': 'Endpoint:',<br />
+        'method': 'Methods:',<br />
+        'description': 'Description:'<br />
+    }<br />
+<br />
+    # Tokenize the input sentence<br />
+    tokens = sentence.lower().split()<br />
+    <br />
+    # Initialize search criteria<br />
+    criteria = {}<br />
+<br />
+    # Extract potential field-value pairs from the sentence<br />
+    for i in range(len(tokens)):<br />
+        if tokens[i] in field_mappings:<br />
+            field = field_mappings[tokens[i]]<br />
+            # Assume the next token is the value<br />
+            if i + 1 &lt; len(tokens):<br />
+                value = tokens[i + 1]<br />
+                if field == 'Methods:':<br />
+                    criteria.setdefault(field, []).append(value.upper())<br />
+                else:<br />
+                    criteria[field] = value.lower()<br />
+<br />
+    # Log the search criteria<br />
+    logging.debug(f"Search criteria: {criteria}")<br />
+<br />
+    # Fetch all sessions from the database<br />
+    cursor.execute("SELECT session_text FROM sessions")<br />
+    sessions = cursor.fetchall()<br />
+<br />
+    # Filter sessions based on the criteria<br />
+    results = []<br />
+    for (session,) in sessions:<br />
+        match = True<br />
+        for field, value in criteria.items():<br />
+            if field == 'Methods:':<br />
+                # Check if any method matches<br />
+                if not any(val.upper() in session for val in value):<br />
+                    match = False<br />
+                    break<br />
+            else:<br />
+                # Check string fields<br />
+                if f"{field} {value.capitalize()}" not in session:<br />
+                    match = False<br />
+                    break<br />
+        if match:<br />
+            results.append(session)<br />
+<br />
+    # Close the connection<br />
+    conn.close()<br />
+<br />
+    return results<br />
+<br />
+# Example usage<br />
+sentence = "function login method POST"<br />
+results = search_sessions(sentence)<br />
+for row in results:<br />
+    print(row)<br />
+```<br />
+<br />
+### Explanation<br />
+<br />
+1. **Database Setup**: The script sets up an SQLite database with a table `sessions` and inserts some sample data. This table will store session data as text.<br />
+<br />
+2. **Sentence Parsing and Criteria Extraction**: The `search_sessions` function tokenizes the input sentence and maps the tokens to search terms in the session text.<br />
+<br />
+3. **Search Criteria Logging**: The script logs the extracted search criteria using the `logging` module for debugging purposes.<br />
+<br />
+4. **Fetch and Filter Sessions**: The function fetches all sessions from the database and filters them based on the extracted criteria. It supports partial matches and handles both string and list fields.<br />
+<br />
+5. **Search and Display Results**: The script performs the search based on the input sentence and displays the matching results.<br />
+<br />
+### Running the Script<br />
+<br />
+To run the script, save it to a Python file (e.g., `search_sessions.py`), ensure your `conversations.db` is in the same directory, and execute the script:<br />
+<br />
+```sh<br />
+python search_sessions.py<br />
+```<br />
+<br />
+The output will display the matching sessions based on the input sentence. This approach leverages the structured session data stored in the database to perform efficient searches, providing flexibility in handling various search queries.<br />
+<br />

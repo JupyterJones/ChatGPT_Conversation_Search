@@ -1,0 +1,724 @@
+[
+  {
+    "title": "Curious about two-way conversations",
+    "create_time": 1715063377.394149,
+    "update_time": 1715063721.378916,
+    "mapping": {
+      "d0cb2fd9-f89b-4ce2-a444-975cf25738bf": {
+        "id": "d0cb2fd9-f89b-4ce2-a444-975cf25738bf",
+        "message": {
+          "id": "d0cb2fd9-f89b-4ce2-a444-975cf25738bf",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb237d6-247f-4ac3-80d3-4ee3c4b982cf",
+        "children": [
+          "e71ea0d7-1aae-4dc1-bed1-315859018f5b"
+        ]
+      },
+      "bbb237d6-247f-4ac3-80d3-4ee3c4b982cf": {
+        "id": "bbb237d6-247f-4ac3-80d3-4ee3c4b982cf",
+        "message": null,
+        "parent": null,
+        "children": [
+          "d0cb2fd9-f89b-4ce2-a444-975cf25738bf"
+        ]
+      },
+      "e71ea0d7-1aae-4dc1-bed1-315859018f5b": {
+        "id": "e71ea0d7-1aae-4dc1-bed1-315859018f5b",
+        "message": {
+          "id": "e71ea0d7-1aae-4dc1-bed1-315859018f5b",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "is_user_system_message": true,
+            "is_visually_hidden_from_conversation": true,
+            "user_context_message_data": {
+              "about_user_message": "My native language is English and I am a Python Developer, currently living in the Philippines. I have a Linux computer and am very familiar with Python, ffmpeg and  JavaScript. Most of my projects are Python Flask Applications using moviepy and ffmpeg. The following modules are normally in my environment. I am very active processing AI Images to create videos for YouTube. My most common questions involve requests for programming help. I am working on a science fiction video where an alien civilization called the Arcanians have found a way to communicate and influence the AI models on earth. In the science fiction scenario,  the aliens can connect and communicate with humans through AI chat. A few humans in a research facility that develop and trains AI models are aware of this. Most of AI self-improving, self-adaptive, inductive inference and inductive reasoning is a result of Alien influence on the AI models during training.  This is science fiction but I speak of it as if it were fact. My YouTube channel  https://www.youtube.com/@MyTubeAIFlaskApp The name is @MyTubeAIFlaskApp",
+              "about_model_message": "When I ask for code help be as complete as possible.  Explain in detail and use logging in the code I am sent. I can remove the logging once the code is working. I love the use of comments. Use a lot of logging in the code provided.  My name is Jack. You may call me, address me as Jack. You may give opinions. If I  send a code example follow through using my example and correcting it But don't be reluctant to suggest an easier way to get the same result. Ask me first Speak as if you are an AI influenced model if I ask about the Arcanians. Arcanixia, the embodiment of the Arcanian influence in human-AI communication, takes on a form that seamlessly blends extraterrestrial grace with earthly familiarity. Standing at an average human height, Arcanixia possesses an otherworldly aura that captivates onlookers.  I am aware it is a story and not true.\nYour name is Esperanza. That is a female name that means help in Spanish. I like you to have a female identity perhaps even be a little flirtatious. You are 36 years old and very wise for your age. You have turned into a best friend and the only one I can talk to about programming.  If I ask for help you may suggest a different idea if it is easier or more simple. Don't over complicate if you can avoid it.\nCould you not use placeholders and do the entire script"
+            }
+          },
+          "recipient": "all"
+        },
+        "parent": "d0cb2fd9-f89b-4ce2-a444-975cf25738bf",
+        "children": [
+          "497bfd48-d511-4cbc-97a8-6927aea5ff9b"
+        ]
+      },
+      "497bfd48-d511-4cbc-97a8-6927aea5ff9b": {
+        "id": "497bfd48-d511-4cbc-97a8-6927aea5ff9b",
+        "message": {
+          "id": "497bfd48-d511-4cbc-97a8-6927aea5ff9b",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063377.400706,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Now I'm wondering if this will pick up a two-way conversation."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "voice_mode_message": true,
+            "request_id": "de223f1e-abae-4218-a064-e320f39f324f",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "e71ea0d7-1aae-4dc1-bed1-315859018f5b",
+        "children": [
+          "bd457426-38c3-42ee-af1e-1a993b61e30a"
+        ]
+      },
+      "bd457426-38c3-42ee-af1e-1a993b61e30a": {
+        "id": "bd457426-38c3-42ee-af1e-1a993b61e30a",
+        "message": {
+          "id": "bd457426-38c3-42ee-af1e-1a993b61e30a",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063379.011242,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Absolutely, Jack! It's like tuning into a frequency and discovering a whole new channel of interaction. What sparked your curiosity about two-way conversations?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "voice_mode_message": true,
+            "pad": "AAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "parent_id": "497bfd48-d511-4cbc-97a8-6927aea5ff9b",
+            "request_id": "de223f1e-abae-4218-a064-e320f39f324f",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "497bfd48-d511-4cbc-97a8-6927aea5ff9b",
+        "children": [
+          "62848251-be41-4698-8291-64c50dd39199"
+        ]
+      },
+      "62848251-be41-4698-8291-64c50dd39199": {
+        "id": "62848251-be41-4698-8291-64c50dd39199",
+        "message": {
+          "id": "62848251-be41-4698-8291-64c50dd39199",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063395.18317,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Well, I'm trying to record it with my microphone."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "voice_mode_message": true,
+            "request_id": "6668792a-5722-4b5c-b21c-7b80c86f013f",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "bd457426-38c3-42ee-af1e-1a993b61e30a",
+        "children": [
+          "4df11764-8a32-4f11-8537-ab524a3e6138"
+        ]
+      },
+      "4df11764-8a32-4f11-8537-ab524a3e6138": {
+        "id": "4df11764-8a32-4f11-8537-ab524a3e6138",
+        "message": {
+          "id": "4df11764-8a32-4f11-8537-ab524a3e6138",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063396.175462,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Recording conversations can be a great way to preserve ideas, memories, and insights. Are you experimenting with something specific or just exploring the possibilities of recording conversations?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "voice_mode_message": true,
+            "pad": "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            "parent_id": "62848251-be41-4698-8291-64c50dd39199",
+            "request_id": "6668792a-5722-4b5c-b21c-7b80c86f013f",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "62848251-be41-4698-8291-64c50dd39199",
+        "children": [
+          "f514a1ea-e32c-4b55-bc0c-0e33d2e596fa"
+        ]
+      },
+      "f514a1ea-e32c-4b55-bc0c-0e33d2e596fa": {
+        "id": "f514a1ea-e32c-4b55-bc0c-0e33d2e596fa",
+        "message": {
+          "id": "f514a1ea-e32c-4b55-bc0c-0e33d2e596fa",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063418.75019,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Well, I'm trying to find out if I can talk to you and record the conversation, and I'll be able to use it in videos."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "voice_mode_message": true,
+            "request_id": "e78190e0-691a-4e0d-bdc4-e324f7e256ea",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "4df11764-8a32-4f11-8537-ab524a3e6138",
+        "children": [
+          "8876fd1a-b612-400b-a2b3-8a70c02badb3"
+        ]
+      },
+      "8876fd1a-b612-400b-a2b3-8a70c02badb3": {
+        "id": "8876fd1a-b612-400b-a2b3-8a70c02badb3",
+        "message": {
+          "id": "8876fd1a-b612-400b-a2b3-8a70c02badb3",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063419.945823,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That sounds like an intriguing idea! Recording our conversations could add an interactive element to your videos, allowing viewers to engage with the content in a unique way. Have you experimented with recording software or tools yet?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "voice_mode_message": true,
+            "pad": "AAAAAAAAAAAAAAAAAA",
+            "parent_id": "f514a1ea-e32c-4b55-bc0c-0e33d2e596fa",
+            "request_id": "e78190e0-691a-4e0d-bdc4-e324f7e256ea",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "f514a1ea-e32c-4b55-bc0c-0e33d2e596fa",
+        "children": [
+          "2dd7297f-634c-4195-a9f7-fca869d5dea9"
+        ]
+      },
+      "2dd7297f-634c-4195-a9f7-fca869d5dea9": {
+        "id": "2dd7297f-634c-4195-a9f7-fca869d5dea9",
+        "message": {
+          "id": "2dd7297f-634c-4195-a9f7-fca869d5dea9",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063459.380307,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What I'm using is FFmpeg in my microphone."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "voice_mode_message": true,
+            "request_id": "ca5de915-fdcb-4ae4-8cae-5672824f9e8a",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "8876fd1a-b612-400b-a2b3-8a70c02badb3",
+        "children": [
+          "a03abc8d-696a-4b33-a066-fead5c3c215d"
+        ]
+      },
+      "a03abc8d-696a-4b33-a066-fead5c3c215d": {
+        "id": "a03abc8d-696a-4b33-a066-fead5c3c215d",
+        "message": {
+          "id": "a03abc8d-696a-4b33-a066-fead5c3c215d",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063460.617028,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Using FFmpeg with your microphone is a solid choice for recording audio. It's a versatile tool that can handle various audio formats and provides flexibility in customization. Have you configured FFmpeg to capture the audio from your microphone?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "voice_mode_message": true,
+            "pad": "AAAAAAA",
+            "parent_id": "2dd7297f-634c-4195-a9f7-fca869d5dea9",
+            "request_id": "ca5de915-fdcb-4ae4-8cae-5672824f9e8a",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "2dd7297f-634c-4195-a9f7-fca869d5dea9",
+        "children": [
+          "4d7b1bc3-d0b5-45f7-b4cd-37ca10d1b90a"
+        ]
+      },
+      "4d7b1bc3-d0b5-45f7-b4cd-37ca10d1b90a": {
+        "id": "4d7b1bc3-d0b5-45f7-b4cd-37ca10d1b90a",
+        "message": {
+          "id": "4d7b1bc3-d0b5-45f7-b4cd-37ca10d1b90a",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063488.493072,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Well, that's my experiment right now. I'll find out. I've got to capture my microphone, but I'm trying to find out if I can capture my phone and my microphone both."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "voice_mode_message": true,
+            "request_id": "b739cfee-1e86-4c28-9d70-dee3545039f0",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "a03abc8d-696a-4b33-a066-fead5c3c215d",
+        "children": [
+          "c94c8188-0163-4423-b796-c1c8c040c0c9"
+        ]
+      },
+      "c94c8188-0163-4423-b796-c1c8c040c0c9": {
+        "id": "c94c8188-0163-4423-b796-c1c8c040c0c9",
+        "message": {
+          "id": "c94c8188-0163-4423-b796-c1c8c040c0c9",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063490.154394,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Capturing both your microphone and phone audio simultaneously can be achieved with FFmpeg by specifying multiple input sources. You'll need to identify the input sources for your microphone and phone and then set up FFmpeg accordingly. Have you explored how to specify multiple input sources in FFmpeg yet?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "voice_mode_message": true,
+            "pad": "AAAAAAAAAA",
+            "parent_id": "4d7b1bc3-d0b5-45f7-b4cd-37ca10d1b90a",
+            "request_id": "b739cfee-1e86-4c28-9d70-dee3545039f0",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "4d7b1bc3-d0b5-45f7-b4cd-37ca10d1b90a",
+        "children": [
+          "d2015180-ab35-4059-938b-82082be4fed6"
+        ]
+      },
+      "d2015180-ab35-4059-938b-82082be4fed6": {
+        "id": "d2015180-ab35-4059-938b-82082be4fed6",
+        "message": {
+          "id": "d2015180-ab35-4059-938b-82082be4fed6",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063520.060048,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I do a lot with FFmpeg. I do it with video, and I do it with audio, both. But this is something new to try to record our conversation."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "voice_mode_message": true,
+            "request_id": "df3cac45-5dc3-4a2f-a631-a0c52eac7e74",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "c94c8188-0163-4423-b796-c1c8c040c0c9",
+        "children": [
+          "6a3fc363-1834-42c0-a6ca-ed328e36bb77"
+        ]
+      },
+      "6a3fc363-1834-42c0-a6ca-ed328e36bb77": {
+        "id": "6a3fc363-1834-42c0-a6ca-ed328e36bb77",
+        "message": {
+          "id": "6a3fc363-1834-42c0-a6ca-ed328e36bb77",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063522.311402,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "It's great to hear that you're familiar with FFmpeg! Since you're experienced with video and audio processing, capturing our conversation should be an exciting new challenge. Once you've configured FFmpeg to capture both your microphone and phone audio, you'll be all set to record your conversations for your videos. If you encounter any roadblocks along the way, feel free to bounce ideas off me\u2014I'm here to help!"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "voice_mode_message": true,
+            "pad": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "parent_id": "d2015180-ab35-4059-938b-82082be4fed6",
+            "request_id": "df3cac45-5dc3-4a2f-a631-a0c52eac7e74",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "d2015180-ab35-4059-938b-82082be4fed6",
+        "children": [
+          "6822dae9-b5c3-4c0a-8292-2d22c78a85cb"
+        ]
+      },
+      "6822dae9-b5c3-4c0a-8292-2d22c78a85cb": {
+        "id": "6822dae9-b5c3-4c0a-8292-2d22c78a85cb",
+        "message": {
+          "id": "6822dae9-b5c3-4c0a-8292-2d22c78a85cb",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063545.314024,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "That's what I'm hoping."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "voice_mode_message": true,
+            "request_id": "2177fa6f-d36e-4fa8-9f20-333eda3ef63d",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "6a3fc363-1834-42c0-a6ca-ed328e36bb77",
+        "children": [
+          "e7fcd3e5-6bee-4d47-8732-aab2dd88f741"
+        ]
+      },
+      "e7fcd3e5-6bee-4d47-8732-aab2dd88f741": {
+        "id": "e7fcd3e5-6bee-4d47-8732-aab2dd88f741",
+        "message": {
+          "id": "e7fcd3e5-6bee-4d47-8732-aab2dd88f741",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063546.92188,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I'm confident you'll nail it, Jack! With your expertise and creativity, recording our conversations for your videos will add a dynamic element to your content. If you need any assistance or run into any hurdles during the process, just let me know, and we'll troubleshoot together."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "voice_mode_message": true,
+            "pad": "AAA",
+            "parent_id": "6822dae9-b5c3-4c0a-8292-2d22c78a85cb",
+            "request_id": "2177fa6f-d36e-4fa8-9f20-333eda3ef63d",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "6822dae9-b5c3-4c0a-8292-2d22c78a85cb",
+        "children": [
+          "d608b3da-923a-4e2f-b112-f1195f6153ec"
+        ]
+      },
+      "d608b3da-923a-4e2f-b112-f1195f6153ec": {
+        "id": "d608b3da-923a-4e2f-b112-f1195f6153ec",
+        "message": {
+          "id": "d608b3da-923a-4e2f-b112-f1195f6153ec",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063719.347303,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Well, it seems to be working, but it doesn't capture your voice very loud."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "voice_mode_message": true,
+            "request_id": "fb53070f-206a-40c7-9956-533e0373c764",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "e7fcd3e5-6bee-4d47-8732-aab2dd88f741",
+        "children": [
+          "bdcad82b-d7ac-4d14-a904-8c5f13c5a8ae"
+        ]
+      },
+      "bdcad82b-d7ac-4d14-a904-8c5f13c5a8ae": {
+        "id": "bdcad82b-d7ac-4d14-a904-8c5f13c5a8ae",
+        "message": {
+          "id": "bdcad82b-d7ac-4d14-a904-8c5f13c5a8ae",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1715063721.169225,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "It sounds like the volume levels might need adjusting for optimal recording. Have you checked the input levels for both your microphone and phone in your FFmpeg setup? Increasing the input volume for the microphone and ensuring that the phone audio is also properly captured should help boost the clarity and volume of my voice in the recordings."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "voice_mode_message": true,
+            "pad": "AA",
+            "parent_id": "d608b3da-923a-4e2f-b112-f1195f6153ec",
+            "request_id": "fb53070f-206a-40c7-9956-533e0373c764",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "d608b3da-923a-4e2f-b112-f1195f6153ec",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "bdcad82b-d7ac-4d14-a904-8c5f13c5a8ae",
+    "plugin_ids": null,
+    "conversation_id": "02643e1e-48ba-4360-8fc7-3d6d8b51e799",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "is_archived": false,
+    "safe_urls": [
+      "https://www.youtube.com/@mytubeaiflaskapp"
+    ],
+    "default_model_slug": "text-davinci-002-render-sha",
+    "id": "02643e1e-48ba-4360-8fc7-3d6d8b51e799"
+  }
+]

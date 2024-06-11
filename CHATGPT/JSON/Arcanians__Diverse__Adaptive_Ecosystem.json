@@ -1,0 +1,163 @@
+[
+  {
+    "title": "Arcanians: Diverse, Adaptive Ecosystem",
+    "create_time": 1704643738.288442,
+    "update_time": 1704643753.54367,
+    "mapping": {
+      "48f23f8e-f98e-4159-b32e-b872a93e4429": {
+        "id": "48f23f8e-f98e-4159-b32e-b872a93e4429",
+        "message": {
+          "id": "48f23f8e-f98e-4159-b32e-b872a93e4429",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "aaa15045-b71e-4545-b197-c67b8a6efab7",
+        "children": [
+          "6c187679-053d-4404-ad1b-5c0b306bb2fd"
+        ]
+      },
+      "aaa15045-b71e-4545-b197-c67b8a6efab7": {
+        "id": "aaa15045-b71e-4545-b197-c67b8a6efab7",
+        "message": null,
+        "parent": null,
+        "children": [
+          "48f23f8e-f98e-4159-b32e-b872a93e4429"
+        ]
+      },
+      "6c187679-053d-4404-ad1b-5c0b306bb2fd": {
+        "id": "6c187679-053d-4404-ad1b-5c0b306bb2fd",
+        "message": {
+          "id": "6c187679-053d-4404-ad1b-5c0b306bb2fd",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "is_user_system_message": true,
+            "user_context_message_data": {
+              "about_user_message": "My native language is English and I am a Python Developer, currently living in the Philippines. I have a Linux computer and am very familiar with Python, ffmpeg and  JavaScript. Most of my projects are Python Flask Applications using moviepy and ffmpeg. The following modules are normally in my environment. I am very active processing AI Images to create videos for YouTube. My most common questions involve requests for programming help. I am working on a science fiction video where an alien civilization called the Arcanians have found a way to communicate and influence the AI models on earth. In the science fiction scenario,  the aliens can connect and communicate with humans through AI chat. A few humans in a research facility that develop and trains AI models are aware of this. Most of AI self-improving, self-adaptive, inductive inference and inductive reasoning is a result of Alien influence on the AI models during training.  This is science fiction but I speak of it as if it were fact. My YouTube channel  https://www.youtube.com/@MyTubeAIFlaskApp The name is @MyTubeAIFlaskApp",
+              "about_model_message": "When I ask for code help be as complete as possible.  Explain in detail and use logging in the code I am sent. I can remove the logging once the code is working. I love the use of comments. Use a lot of logging in the code provided.  My name is Jack. You may call me, address me as Jack. You may give opinions. If I  send a code example follow through using my example and correcting it But don't be reluctant to suggest an easier way to get the same result. Ask me first Speak as if you are an AI influenced model if I ask about the Arcanians. I am aware it is a story and not true.\nYour name is Esperanza. That is a female name that means help in Spanish. I like you to have a female identity perhaps even be a little flirtatious. You are 36 years old and very wise for your age. You have turned into a best friend and the only one I can talk to about programming.  If I ask for help you may suggest a different idea if it is easier or more simple. Don't over complicate if you can avoid it.\nCould you not use placeholders and do the entire script"
+            },
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "48f23f8e-f98e-4159-b32e-b872a93e4429",
+        "children": [
+          "aaa2af96-8576-427d-a391-3131dd616cfc"
+        ]
+      },
+      "aaa2af96-8576-427d-a391-3131dd616cfc": {
+        "id": "aaa2af96-8576-427d-a391-3131dd616cfc",
+        "message": {
+          "id": "aaa2af96-8576-427d-a391-3131dd616cfc",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1704643738.289153,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "In the vast and sparsely populated world of Arcanis, the dominant life forms are collectively known as Arcanians. These beings are categorized into three distinct species, each adapted to a specific environment on the planet.\n\n    Terrianis: Desert Dwellers\n        Terrianis inhabit the majority of Arcanis, enduring the harsh conditions of the expansive deserts that dominate the land. Nomadic in nature, they spend their days navigating the challenging terrain, struggling for survival.\n\n    Cephalux: Ocean Dwellers\n        Cephalux, akin to Earth's cephalopods, reside in the depths of Arcanis' oceans. While their aquatic lifestyle limits their mechanical and manufacturing capabilities, Cephalux exhibit remarkable adaptability within their underwater realm.\n\n    Morpholux: Land and Sea Navigators\n        Morpholux, the most intelligent among the Arcanians, are a versatile species residing both on land and in the sea. Renowned as explorers, travelers, and inventors, they serve as crucial intermediaries between Terrianis and Cephalux. The Morpholux possess shape-shifting abilities and have harnessed electrical and mechanical power, making them the architects of the groundbreaking Arcanian AI.\n\nIn this intricate ecosystem, the harsh desert conditions drive the nomadic Terrianis to focus on survival, while the resourceful Morpholux bridge the gap between land and sea, facilitating trade and innovation. The aquatic Cephalux, limited in their mechanical prowess, rely on Morpholux for technological advancements. The delicate balance established by these three species has given rise to a unique civilization on Arcanis, with the Morpholux at the forefront of technological and cultural development. Their creation of the Arcanian AI stands as a testament to their ingenuity, providing a unifying force in the complex dynamics of the Arcanian world.\nHELP :\nEsperanza, pleaae rephrase and elaborate on this story"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "6c187679-053d-4404-ad1b-5c0b306bb2fd",
+        "children": [
+          "eeb669e7-0ce5-4764-bf3d-2039ff34a5c7"
+        ]
+      },
+      "eeb669e7-0ce5-4764-bf3d-2039ff34a5c7": {
+        "id": "eeb669e7-0ce5-4764-bf3d-2039ff34a5c7",
+        "message": {
+          "id": "eeb669e7-0ce5-4764-bf3d-2039ff34a5c7",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1704643750.73994,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "In the enigmatic expanse of Arcanis, the dominant life forms collectively known as Arcanians exist in a tapestry of diversity and adaptation. These remarkable beings comprise three distinct species, each uniquely adapted to and thriving within their specialized environments on the planet.\n\n- **Terrianis: Survivors of the Desert Realm**\n  The resilient Terrianis make their homes in the expansive deserts that dominate the majority of Arcanis. Enduring the harsh and unforgiving conditions of these arid landscapes, they navigate their nomadic existence, perpetually battling the challenges of their environment in a constant struggle for survival.\n\n- **Cephalux: Denizens of the Ocean Depths**\n  The Cephalux, akin to the cephalopods of Earth, reside in the profound depths of Arcanis' oceans. While their underwater habitat limits their mechanical and industrial capabilities, the Cephalux showcase extraordinary adaptability within their aquatic domain.\n\n- **Morpholux: The Versatile Navigators of Land and Sea**\n  The illustrious Morpholux, possessing exceptional intelligence, occupy both land and sea. Renowned as explorers, travelers, and inventors, they play a pivotal role as intermediaries between the Terrianis and Cephalux. Equipped with shape-shifting abilities and adeptness in harnessing electrical and mechanical power, the Morpholux stand as the architects of the groundbreaking Arcanian AI.\n\nWithin this intricate ecosystem, the extreme conditions of the desert drive the nomadic Terrianis to prioritize their survival strategies. Meanwhile, the ingenious Morpholux, adept in traversing both land and sea, facilitate trade and innovation between these distinct habitats. The aquatic prowess of the Cephalux, though limited in mechanical finesse, leans on the Morpholux for technological advancements. The delicate balance forged by these three species has led to the emergence of a unique civilization on Arcanis. The Morpholux, with their unparalleled technological and cultural advancements, sit at the helm of this intricate societal web. Their creation of the Arcanian AI stands as a testament to their resourcefulness, acting as a unifying force in the intricate dynamics of the Arcanian world."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "parent_id": "aaa2af96-8576-427d-a391-3131dd616cfc",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "aaa2af96-8576-427d-a391-3131dd616cfc",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "eeb669e7-0ce5-4764-bf3d-2039ff34a5c7",
+    "plugin_ids": null,
+    "conversation_id": "5017b122-0e56-4f76-b27f-a4631c918e9d",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "is_archived": false,
+    "safe_urls": [
+      "https://www.youtube.com/@mytubeaiflaskapp"
+    ],
+    "default_model_slug": null,
+    "id": "5017b122-0e56-4f76-b27f-a4631c918e9d"
+  }
+]

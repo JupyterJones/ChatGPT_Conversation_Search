@@ -1,0 +1,226 @@
+<!-- templates/index_y.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Suggestions</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 1%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: black;
+            background-image: url("../static/assets/MemMaker_background.png");
+            background-repeat: repeat-y;
+            background-size: cover;
+            /* Use 'cover' to make the image cover the entire body */
+            background-position: top;
+            color: rgb(61, 195, 12);
+        }
+
+        h2 {
+            color: rgb(235, 210, 23);
+        }
+
+        video {
+            margin: 10px, auto;
+            width: 250px;
+            height: auto;
+        }
+
+        .wrapper {
+            padding-top: 50px;
+            display: flex;
+            width: 98%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 70vh;
+            border: 1px solid darkgray;
+        }
+
+        .header {
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+        }
+
+        .columns {
+            display: flex;
+            width: 98%;
+            margin-top: 10px;
+        }
+
+        .column {
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .column.left {
+            width: 50%;
+            border: 1px solid #3b3232;
+        }
+
+        .column.right {
+            margin: 0 auto;
+            /* Center horizontally */
+            width: 50%;
+            /* Adjusted width to make space for wrapped text */
+            border: 1px solid #3b3232;
+            text-align: left;
+            font-size: 20px;
+            /* Allow text wrapping */
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+
+        .column.right video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .footer {
+            width: 98%;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            position: relative;
+            /* Make it relative to the container */
+            bottom: 0;
+            /* Push it to the bottom */
+        }
+
+        #code {
+            font-size: 18px;
+            font-family: monospace;
+        }
+
+        .notes {
+            margin-top: 10px;
+            font-size: 18px;
+            color: rgb(105, 178, 230);
+        }
+
+        pre {
+            white-space: pre-wrap;
+        }
+
+        .sticky-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999;
+            background-color: rgb(131, 57, 57);
+        }
+
+        textarea {
+            background-color: rgb(197, 167, 128);
+        }
+        .align_center {
+            text-align: center!important;
+        }
+        p{
+            color: rgb(238, 234, 205);
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+        span{
+            color: rgb(238, 234, 205);
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+        }
+        pre{
+            margin-top: 80px;
+            color: rgb(30, 203, 8);
+            font-size: 22px;
+                     font-weight: bold;
+        }
+    </style>
+
+<script>
+    // Function to find and highlight the search string
+    function findString(str) {
+      if (parseInt(navigator.appVersion) < 4) return;
+
+      // Check if find method is supported
+      if (window.find) {
+        // Find the search string
+        var strFound = window.find(str);
+        if (!strFound) {
+          // If not found, try to find from the beginning
+          window.find(str, 0, 1);
+        }
+        if (strFound) {
+          // Highlight the found text
+          var range = window.getSelection().getRangeAt(0);
+          var span = document.createElement("span");
+          span.style.backgroundColor = "red";
+          range.surroundContents(span);
+        }
+      } else if (navigator.appName.indexOf("Microsoft") != -1) {
+        // Handle Microsoft browsers
+        // Not implemented for brevity
+      } else if (navigator.appName == "Opera") {
+        // Handle Opera browsers
+        alert("Opera browsers not supported, sorry...");
+        return;
+      }
+
+      // If not found, show alert
+      if (!strFound) alert("String '" + str + "' not found!");
+    }
+
+    // Function to move cursor to next occurrence of search input
+    function moveToNextOccurrence() {
+      var search_str = document.getElementById("search_input").value;
+      findString(search_str);
+    }
+  </script>
+<script>
+    function clearFilenameInput() {
+        document.getElementById('fileInput').value = '';
+    }
+</script>
+
+</head>     <header class="sticky-header align_center">
+    <div class="header align_center">
+      <span>Search ChatGPTDatabase for Code</span>&nbsp;&nbsp; | &nbsp;&nbsp;
+      <input type="text" id="search_input" />
+      <button id="search_submit" onclick="moveToNextOccurrence()">
+        Find Word in Page
+      </button>
+    </div>
+ <form action="/index_" method="post" enctype="multipart/form-data">
+    <p>Search for multiple terms divided by a comma &nbsp;&nbsp; | &nbsp;&nbsp; Example: &nbsp; to, get, the, current, directory</p>
+    <textarea name="terms" rows="1" cols="100"></textarea>
+    <!-- File upload field<input type="file" id="fileInput" name="file"> -->
+    &nbsp;&nbsp;<input type="submit" value="Submit">&nbsp;&nbsp;
+    <button type="button" onclick="clearFilenameInput()">Clear</button>
+</form>
+</header> 
+{% if data %}
+<h2>Processed Data:</h2>
+<ul>
+    {% for row in data %}
+    <li>
+    <pre>    ROWID: {{ row[0] }}, Filename: {{ row[1] }}, Text Content: {{ row[2] }}, Count: {{ row[3] }}</pre>
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
+
+<script>
+    function clearFilenameInput() {
+        document.getElementById('fileInput').value = "";
+    }
+</script>

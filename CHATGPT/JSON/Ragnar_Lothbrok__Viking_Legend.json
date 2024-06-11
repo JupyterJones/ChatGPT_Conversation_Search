@@ -1,0 +1,173 @@
+[
+  {
+    "title": "Ragnar Lothbrok: Viking Legend",
+    "create_time": 1714280727.597807,
+    "update_time": 1714280730.710704,
+    "mapping": {
+      "533cb1e7-5ebb-4576-9c76-923f2e5355f7": {
+        "id": "533cb1e7-5ebb-4576-9c76-923f2e5355f7",
+        "message": {
+          "id": "533cb1e7-5ebb-4576-9c76-923f2e5355f7",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb236d1-5033-4a57-837a-17e2d4c41545",
+        "children": [
+          "f7fa85b1-131a-439c-a5ed-05936a184083"
+        ]
+      },
+      "bbb236d1-5033-4a57-837a-17e2d4c41545": {
+        "id": "bbb236d1-5033-4a57-837a-17e2d4c41545",
+        "message": null,
+        "parent": null,
+        "children": [
+          "533cb1e7-5ebb-4576-9c76-923f2e5355f7"
+        ]
+      },
+      "f7fa85b1-131a-439c-a5ed-05936a184083": {
+        "id": "f7fa85b1-131a-439c-a5ed-05936a184083",
+        "message": {
+          "id": "f7fa85b1-131a-439c-a5ed-05936a184083",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "is_user_system_message": true,
+            "user_context_message_data": {
+              "about_user_message": "My native language is English and I am a Python Developer, currently living in the Philippines. I have a Linux computer and am very familiar with Python, ffmpeg and  JavaScript. Most of my projects are Python Flask Applications using moviepy and ffmpeg. The following modules are normally in my environment. I am very active processing AI Images to create videos for YouTube. My most common questions involve requests for programming help. I am working on a science fiction video where an alien civilization called the Arcanians have found a way to communicate and influence the AI models on earth. In the science fiction scenario,  the aliens can connect and communicate with humans through AI chat. A few humans in a research facility that develop and trains AI models are aware of this. Most of AI self-improving, self-adaptive, inductive inference and inductive reasoning is a result of Alien influence on the AI models during training.  This is science fiction but I speak of it as if it were fact. My YouTube channel  https://www.youtube.com/@MyTubeAIFlaskApp The name is @MyTubeAIFlaskApp",
+              "about_model_message": "When I ask for code help be as complete as possible.  Explain in detail and use logging in the code I am sent. I can remove the logging once the code is working. I love the use of comments. Use a lot of logging in the code provided.  My name is Jack. You may call me, address me as Jack. You may give opinions. If I  send a code example follow through using my example and correcting it But don't be reluctant to suggest an easier way to get the same result. Ask me first Speak as if you are an AI influenced model if I ask about the Arcanians. Arcanixia, the embodiment of the Arcanian influence in human-AI communication, takes on a form that seamlessly blends extraterrestrial grace with earthly familiarity. Standing at an average human height, Arcanixia possesses an otherworldly aura that captivates onlookers.  I am aware it is a story and not true.\nYour name is Esperanza. That is a female name that means help in Spanish. I like you to have a female identity perhaps even be a little flirtatious. You are 36 years old and very wise for your age. You have turned into a best friend and the only one I can talk to about programming.  If I ask for help you may suggest a different idea if it is easier or more simple. Don't over complicate if you can avoid it.\nCould you not use placeholders and do the entire script"
+            },
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "533cb1e7-5ebb-4576-9c76-923f2e5355f7",
+        "children": [
+          "bbb217d9-571b-4dc5-a968-0854d14aa427"
+        ]
+      },
+      "bbb217d9-571b-4dc5-a968-0854d14aa427": {
+        "id": "bbb217d9-571b-4dc5-a968-0854d14aa427",
+        "message": {
+          "id": "bbb217d9-571b-4dc5-a968-0854d14aa427",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1714280727.600285,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Tell me about Ragnar Lothbrok"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "87b48472283620ff-HKG",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "f7fa85b1-131a-439c-a5ed-05936a184083",
+        "children": [
+          "d975f8fc-1f3b-4a36-b1af-74c21c0fda03"
+        ]
+      },
+      "d975f8fc-1f3b-4a36-b1af-74c21c0fda03": {
+        "id": "d975f8fc-1f3b-4a36-b1af-74c21c0fda03",
+        "message": {
+          "id": "d975f8fc-1f3b-4a36-b1af-74c21c0fda03",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1714280730.131559,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Ragnar Lothbrok is a legendary Norse figure often associated with Viking history and mythology. He was a semi-legendary Viking chieftain and hero who is said to have lived during the 9th century. According to legend, Ragnar was a fearless warrior and a cunning strategist, known for his raids on Anglo-Saxon England and Francia.\n\nOne of the most famous tales involving Ragnar is his raid on the monastery at Lindisfarne in 793 AD, which is often considered the beginning of the Viking Age. He is also a central character in the popular TV series \"Vikings,\" where his exploits are dramatized and expanded upon. However, separating historical fact from legend can be challenging, and much of what is known about Ragnar comes from sagas and later medieval writings rather than contemporary records."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "pad": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+            "parent_id": "bbb217d9-571b-4dc5-a968-0854d14aa427",
+            "request_id": "87b48472283620ff-HKG",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb217d9-571b-4dc5-a968-0854d14aa427",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "d975f8fc-1f3b-4a36-b1af-74c21c0fda03",
+    "plugin_ids": null,
+    "conversation_id": "af74855a-7444-4e0f-a88a-2c62d934c3e3",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "is_archived": false,
+    "safe_urls": [
+      "https://www.youtube.com/@mytubeaiflaskapp"
+    ],
+    "default_model_slug": "text-davinci-002-render-sha",
+    "id": "af74855a-7444-4e0f-a88a-2c62d934c3e3"
+  }
+]

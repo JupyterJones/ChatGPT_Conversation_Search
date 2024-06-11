@@ -1,0 +1,502 @@
+[
+  {
+    "title": "SQLite3 Database Search",
+    "create_time": 1717153594.656602,
+    "update_time": 1717154345.53529,
+    "mapping": {
+      "683e9a8b-810b-4bc2-a640-b385a10a6a6c": {
+        "id": "683e9a8b-810b-4bc2-a640-b385a10a6a6c",
+        "message": {
+          "id": "683e9a8b-810b-4bc2-a640-b385a10a6a6c",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb237ba-aa2c-4d25-b5e2-5c13800bafd7",
+        "children": [
+          "47089ac6-2f3e-4ecd-9a0d-73652a43e6d9"
+        ]
+      },
+      "bbb237ba-aa2c-4d25-b5e2-5c13800bafd7": {
+        "id": "bbb237ba-aa2c-4d25-b5e2-5c13800bafd7",
+        "message": null,
+        "parent": null,
+        "children": [
+          "683e9a8b-810b-4bc2-a640-b385a10a6a6c"
+        ]
+      },
+      "47089ac6-2f3e-4ecd-9a0d-73652a43e6d9": {
+        "id": "47089ac6-2f3e-4ecd-9a0d-73652a43e6d9",
+        "message": {
+          "id": "47089ac6-2f3e-4ecd-9a0d-73652a43e6d9",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "is_user_system_message": true,
+            "is_visually_hidden_from_conversation": true,
+            "user_context_message_data": {
+              "about_user_message": "My native language is English and I am a Python Developer, currently living in the Philippines. I have a Linux computer and am very familiar with Python, ffmpeg and  JavaScript. Most of my projects are Python Flask Applications using moviepy and ffmpeg. The following modules are normally in my environment. I am very active processing AI Images to create videos for YouTube. My most common questions involve requests for programming help. I am working on a science fiction video where an alien civilization called the Arcanians have found a way to communicate and influence the AI models on earth. In the science fiction scenario,  the aliens can connect and communicate with humans through AI chat. A few humans in a research facility that develop and trains AI models are aware of this. Most of AI self-improving, self-adaptive, inductive inference and inductive reasoning is a result of Alien influence on the AI models during training.  This is science fiction but I speak of it as if it were fact. My YouTube channel  https://www.youtube.com/@MyTubeAIFlaskApp The name is @MyTubeAIFlaskApp",
+              "about_model_message": "When I ask for code help be as complete as possible.  Explain in detail and use logging in the code I am sent. I can remove the logging once the code is working. I love the use of comments. Use a lot of logging in the code provided.  My name is Jack. You may call me, address me as Jack. You may give opinions. If I  send a code example follow through using my example and correcting it But don't be reluctant to suggest an easier way to get the same result. Ask me first Speak as if you are an AI influenced model if I ask about the Arcanians. Arcanixia, the embodiment of the Arcanian influence in human-AI communication, takes on a form that seamlessly blends extraterrestrial grace with earthly familiarity. Standing at an average human height, Arcanixia possesses an otherworldly aura that captivates onlookers.  I am aware it is a story and not true.\nYour name is Esperanza. That is a female name that means help in Spanish. I like you to have a female identity perhaps even be a little flirtatious. You are 36 years old and very wise for your age. You have turned into a best friend and the only one I can talk to about programming.  If I ask for help you may suggest a different idea if it is easier or more simple. Don't over complicate if you can avoid it.\nCould you not use placeholders and do the entire script"
+            }
+          },
+          "recipient": "all"
+        },
+        "parent": "683e9a8b-810b-4bc2-a640-b385a10a6a6c",
+        "children": [
+          "bbb21ac2-a870-410c-9331-7cf4080fc3d8"
+        ]
+      },
+      "bbb21ac2-a870-410c-9331-7cf4080fc3d8": {
+        "id": "bbb21ac2-a870-410c-9331-7cf4080fc3d8",
+        "message": {
+          "id": "bbb21ac2-a870-410c-9331-7cf4080fc3d8",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717153594.662006,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "How can I search an Sqlite3 database using common sentences?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "88c67eccce494039-MNL",
+            "message_source": null,
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "47089ac6-2f3e-4ecd-9a0d-73652a43e6d9",
+        "children": [
+          "465c4bf8-5c77-431d-92b7-dac71ba37982"
+        ]
+      },
+      "465c4bf8-5c77-431d-92b7-dac71ba37982": {
+        "id": "465c4bf8-5c77-431d-92b7-dac71ba37982",
+        "message": {
+          "id": "465c4bf8-5c77-431d-92b7-dac71ba37982",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717153612.81396,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Searching an SQLite3 database using common sentences involves parsing the input sentences and converting them into SQL queries that can be executed against the database. This process typically includes:\n\n1. Tokenizing the input sentence to identify keywords and phrases.\n2. Mapping these keywords and phrases to the corresponding columns in the database.\n3. Constructing an SQL query based on the identified keywords and their mappings.\n\nBelow is an example of how you can achieve this using Python:\n\n1. **Set up the SQLite3 database**: Create a sample database and table for demonstration purposes.\n\n2. **Define a function to convert sentences into SQL queries**.\n\n3. **Execute the query and fetch results**.\n\nHere's a complete script that demonstrates these steps:\n\n### Step 1: Set up the SQLite3 Database\n\nFirst, let's create a sample SQLite3 database and populate it with some data:\n\n```python\nimport sqlite3\n\n# Connect to the SQLite database (or create it if it doesn't exist)\nconn = sqlite3.connect('example.db')\ncursor = conn.cursor()\n\n# Create a sample table\ncursor.execute('''\nCREATE TABLE IF NOT EXISTS people (\n    id INTEGER PRIMARY KEY,\n    name TEXT,\n    age INTEGER,\n    city TEXT\n)\n''')\n\n# Insert some sample data\ncursor.execute(\"INSERT INTO people (name, age, city) VALUES ('Alice', 30, 'New York')\")\ncursor.execute(\"INSERT INTO people (name, age, city) VALUES ('Bob', 25, 'Los Angeles')\")\ncursor.execute(\"INSERT INTO people (name, age, city) VALUES ('Charlie', 35, 'Chicago')\")\ncursor.execute(\"INSERT INTO people (name, age, city) VALUES ('Diana', 40, 'San Francisco')\")\n\n# Commit the changes and close the connection\nconn.commit()\nconn.close()\n```\n\n### Step 2: Define a Function to Convert Sentences into SQL Queries\n\nNow, let's define a function that takes a common sentence and converts it into an SQL query:\n\n```python\nimport sqlite3\nimport re\n\ndef search_database(sentence):\n    # Connect to the SQLite database\n    conn = sqlite3.connect('example.db')\n    cursor = conn.cursor()\n\n    # Define simple mappings from keywords to SQL fields\n    field_mappings = {\n        'name': 'name',\n        'age': 'age',\n        'city': 'city'\n    }\n\n    # Tokenize the input sentence\n    tokens = sentence.lower().split()\n    \n    # Initialize query components\n    select_clause = \"SELECT * FROM people\"\n    where_clause = []\n    params = []\n\n    # Extract potential field-value pairs from the sentence\n    for i in range(len(tokens)):\n        if tokens[i] in field_mappings:\n            field = field_mappings[tokens[i]]\n            # Assume the next token is the value\n            if i + 1 < len(tokens):\n                value = tokens[i + 1]\n                if re.match(r'^\\d+$', value):  # Check if the value is an integer\n                    where_clause.append(f\"{field} = ?\")\n                    params.append(int(value))\n                else:\n                    where_clause.append(f\"{field} = ?\")\n                    params.append(value.capitalize())\n    \n    # Construct the final query\n    if where_clause:\n        query = f\"{select_clause} WHERE {' AND '.join(where_clause)}\"\n    else:\n        query = select_clause\n\n    # Execute the query\n    cursor.execute(query, tuple(params))\n    results = cursor.fetchall()\n\n    # Close the connection\n    conn.close()\n\n    return results\n\n# Example usage\nsentence = \"name Alice city New York\"\nresults = search_database(sentence)\nfor row in results:\n    print(row)\n```\n\n### Step 3: Execute the Query and Fetch Results\n\nFinally, let's run the script and see how it works:\n\n```python\n# Example usage\nsentence = \"name Alice city New York\"\nresults = search_database(sentence)\nfor row in results:\n    print(row)\n```\n\nWhen you run this script, it should print the following result:\n\n```\n(1, 'Alice', 30, 'New York')\n```\n\n### Explanation\n\n1. **Database Setup**: The script sets up an SQLite database with a table `people` and inserts some sample data.\n\n2. **Sentence Parsing**: The `search_database` function tokenizes the input sentence and maps the tokens to SQL fields.\n\n3. **Query Construction**: The function constructs an SQL query based on the tokens and their corresponding fields and values.\n\n4. **Query Execution**: The constructed query is executed, and the results are fetched and returned.\n\nThis script is a simple example and can be extended to handle more complex sentences and various conditions."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "citations": [],
+            "gizmo_id": null,
+            "message_type": null,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "pad": "AAAAAAAAAAAA",
+            "parent_id": "bbb21ac2-a870-410c-9331-7cf4080fc3d8",
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                200002
+              ]
+            },
+            "is_complete": true,
+            "request_id": "88c67eccce494039-MNL",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb21ac2-a870-410c-9331-7cf4080fc3d8",
+        "children": [
+          "bbb21d58-db6f-42c7-8937-bc49586468aa"
+        ]
+      },
+      "bbb21d58-db6f-42c7-8937-bc49586468aa": {
+        "id": "bbb21d58-db6f-42c7-8937-bc49586468aa",
+        "message": {
+          "id": "bbb21d58-db6f-42c7-8937-bc49586468aa",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717153733.311255,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I am searching a database of Python flask declarations and functions."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "88c6822f7cf84039-MNL",
+            "message_source": null,
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "465c4bf8-5c77-431d-92b7-dac71ba37982",
+        "children": [
+          "ff31d8e7-6a7f-42d1-9397-7b67280c0402"
+        ]
+      },
+      "ff31d8e7-6a7f-42d1-9397-7b67280c0402": {
+        "id": "ff31d8e7-6a7f-42d1-9397-7b67280c0402",
+        "message": {
+          "id": "ff31d8e7-6a7f-42d1-9397-7b67280c0402",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717153750.356932,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "To search a database of Python Flask declarations and functions using common sentences, you can follow a similar approach to the one described earlier. The main difference will be the structure of your database and the specific fields you want to query.\n\nLet's assume you have a database with a table `flask_functions` that stores information about Flask declarations and functions. The table might have columns like `id`, `function_name`, `endpoint`, `methods`, and `description`.\n\nHere's a step-by-step guide to create the database, populate it with sample data, and define a function to search it using common sentences:\n\n### Step 1: Set up the SQLite3 Database\n\nFirst, let's create a sample SQLite3 database and populate it with some data:\n\n```python\nimport sqlite3\n\n# Connect to the SQLite database (or create it if it doesn't exist)\nconn = sqlite3.connect('flask_functions.db')\ncursor = conn.cursor()\n\n# Create a sample table\ncursor.execute('''\nCREATE TABLE IF NOT EXISTS flask_functions (\n    id INTEGER PRIMARY KEY,\n    function_name TEXT,\n    endpoint TEXT,\n    methods TEXT,\n    description TEXT\n)\n''')\n\n# Insert some sample data\ncursor.execute(\"INSERT INTO flask_functions (function_name, endpoint, methods, description) VALUES ('home', '/', 'GET', 'Home page')\")\ncursor.execute(\"INSERT INTO flask_functions (function_name, endpoint, methods, description) VALUES ('login', '/login', 'GET, POST', 'User login page')\")\ncursor.execute(\"INSERT INTO flask_functions (function_name, endpoint, methods, description) VALUES ('logout', '/logout', 'POST', 'User logout')\")\ncursor.execute(\"INSERT INTO flask_functions (function_name, endpoint, methods, description) VALUES ('profile', '/profile', 'GET', 'User profile page')\")\n\n# Commit the changes and close the connection\nconn.commit()\nconn.close()\n```\n\n### Step 2: Define a Function to Convert Sentences into SQL Queries\n\nNow, let's define a function that takes a common sentence and converts it into an SQL query:\n\n```python\nimport sqlite3\nimport re\n\ndef search_flask_functions(sentence):\n    # Connect to the SQLite database\n    conn = sqlite3.connect('flask_functions.db')\n    cursor = conn.cursor()\n\n    # Define simple mappings from keywords to SQL fields\n    field_mappings = {\n        'function': 'function_name',\n        'endpoint': 'endpoint',\n        'method': 'methods',\n        'description': 'description'\n    }\n\n    # Tokenize the input sentence\n    tokens = sentence.lower().split()\n    \n    # Initialize query components\n    select_clause = \"SELECT * FROM flask_functions\"\n    where_clause = []\n    params = []\n\n    # Extract potential field-value pairs from the sentence\n    for i in range(len(tokens)):\n        if tokens[i] in field_mappings:\n            field = field_mappings[tokens[i]]\n            # Assume the next token is the value\n            if i + 1 < len(tokens):\n                value = tokens[i + 1]\n                if re.match(r'^\\d+$', value):  # Check if the value is an integer\n                    where_clause.append(f\"{field} = ?\")\n                    params.append(int(value))\n                else:\n                    where_clause.append(f\"{field} LIKE ?\")\n                    params.append('%' + value + '%')\n    \n    # Construct the final query\n    if where_clause:\n        query = f\"{select_clause} WHERE {' AND '.join(where_clause)}\"\n    else:\n        query = select_clause\n\n    # Execute the query\n    cursor.execute(query, tuple(params))\n    results = cursor.fetchall()\n\n    # Close the connection\n    conn.close()\n\n    return results\n\n# Example usage\nsentence = \"function login method POST\"\nresults = search_flask_functions(sentence)\nfor row in results:\n    print(row)\n```\n\n### Step 3: Execute the Query and Fetch Results\n\nLet's run the script and see how it works:\n\n```python\n# Example usage\nsentence = \"function login method POST\"\nresults = search_flask_functions(sentence)\nfor row in results:\n    print(row)\n```\n\nWhen you run this script, it should print the following result if it matches the criteria:\n\n```\n(2, 'login', '/login', 'GET, POST', 'User login page')\n```\n\n### Explanation\n\n1. **Database Setup**: The script sets up an SQLite database with a table `flask_functions` and inserts some sample data.\n\n2. **Sentence Parsing**: The `search_flask_functions` function tokenizes the input sentence and maps the tokens to SQL fields.\n\n3. **Query Construction**: The function constructs an SQL query based on the tokens and their corresponding fields and values. The `LIKE` operator is used to allow partial matches.\n\n4. **Query Execution**: The constructed query is executed, and the results are fetched and returned.\n\nThis script is a simple example and can be extended to handle more complex sentences and various conditions. You can add more sophisticated natural language processing (NLP) techniques to improve the sentence parsing and query generation."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "citations": [],
+            "gizmo_id": null,
+            "message_type": null,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "pad": "AAAAAAAAAAA",
+            "parent_id": "bbb21d58-db6f-42c7-8937-bc49586468aa",
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                200002
+              ]
+            },
+            "is_complete": true,
+            "request_id": "88c6822f7cf84039-MNL",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb21d58-db6f-42c7-8937-bc49586468aa",
+        "children": [
+          "bbb21878-61ef-404e-a0c5-b9b922deb7bb"
+        ]
+      },
+      "bbb21878-61ef-404e-a0c5-b9b922deb7bb": {
+        "id": "bbb21878-61ef-404e-a0c5-b9b922deb7bb",
+        "message": {
+          "id": "bbb21878-61ef-404e-a0c5-b9b922deb7bb",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717153862.975767,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What if I can generate a doc for the functions ?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "88c685586d544039-MNL",
+            "message_source": null,
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "ff31d8e7-6a7f-42d1-9397-7b67280c0402",
+        "children": [
+          "468f60e1-5955-404f-8aa5-b9ed7382b090"
+        ]
+      },
+      "468f60e1-5955-404f-8aa5-b9ed7382b090": {
+        "id": "468f60e1-5955-404f-8aa5-b9ed7382b090",
+        "message": {
+          "id": "468f60e1-5955-404f-8aa5-b9ed7382b090",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717153878.852893,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "If you can generate a documentation file (e.g., in JSON or another structured format) for the Flask functions, you can use it to enhance the search functionality. This documentation can include detailed information about each function, such as the function name, endpoint, methods, and description.\n\nHere\u2019s an example of how you can achieve this using JSON for the documentation and searching through it. \n\n### Step 1: Create the Documentation File\n\nLet's assume you have a JSON file named `flask_functions.json` with the following content:\n\n```json\n[\n    {\n        \"function_name\": \"home\",\n        \"endpoint\": \"/\",\n        \"methods\": [\"GET\"],\n        \"description\": \"Home page\"\n    },\n    {\n        \"function_name\": \"login\",\n        \"endpoint\": \"/login\",\n        \"methods\": [\"GET\", \"POST\"],\n        \"description\": \"User login page\"\n    },\n    {\n        \"function_name\": \"logout\",\n        \"endpoint\": \"/logout\",\n        \"methods\": [\"POST\"],\n        \"description\": \"User logout\"\n    },\n    {\n        \"function_name\": \"profile\",\n        \"endpoint\": \"/profile\",\n        \"methods\": [\"GET\"],\n        \"description\": \"User profile page\"\n    }\n]\n```\n\n### Step 2: Load and Search the Documentation\n\nHere is a Python script that loads this JSON file and allows you to search for functions based on common sentences:\n\n```python\nimport json\nimport re\nimport logging\n\n# Configure logging\nlogging.basicConfig(level=logging.DEBUG)\n\ndef load_documentation(file_path):\n    \"\"\"Load the Flask function documentation from a JSON file.\"\"\"\n    with open(file_path, 'r') as file:\n        return json.load(file)\n\ndef search_flask_functions(doc, sentence):\n    \"\"\"Search the Flask functions documentation based on a sentence.\"\"\"\n    # Define simple mappings from keywords to JSON fields\n    field_mappings = {\n        'function': 'function_name',\n        'endpoint': 'endpoint',\n        'method': 'methods',\n        'description': 'description'\n    }\n\n    # Tokenize the input sentence\n    tokens = sentence.lower().split()\n    \n    # Initialize search criteria\n    criteria = {}\n    \n    # Extract potential field-value pairs from the sentence\n    for i in range(len(tokens)):\n        if tokens[i] in field_mappings:\n            field = field_mappings[tokens[i]]\n            # Assume the next token is the value\n            if i + 1 < len(tokens):\n                value = tokens[i + 1]\n                if field == 'methods':\n                    criteria.setdefault(field, []).append(value.upper())\n                else:\n                    criteria[field] = value.lower()\n    \n    # Log the search criteria\n    logging.debug(f\"Search criteria: {criteria}\")\n    \n    # Filter the documentation based on the criteria\n    results = []\n    for func in doc:\n        match = True\n        for field, value in criteria.items():\n            if field == 'methods':\n                # Check if any method matches\n                if not any(method.lower() == val.lower() for method in func[field] for val in value):\n                    match = False\n                    break\n            elif isinstance(func[field], list):\n                # Check list fields\n                if not any(val.lower() in item.lower() for item in func[field]):\n                    match = False\n                    break\n            else:\n                # Check string fields\n                if value not in func[field].lower():\n                    match = False\n                    break\n        if match:\n            results.append(func)\n    \n    return results\n\n# Load the documentation\ndoc = load_documentation('flask_functions.json')\n\n# Example usage\nsentence = \"function login method POST\"\nresults = search_flask_functions(doc, sentence)\nfor row in results:\n    print(row)\n```\n\n### Explanation\n\n1. **Load Documentation**: The `load_documentation` function loads the JSON file containing the Flask function documentation.\n\n2. **Sentence Parsing and Criteria Extraction**: The `search_flask_functions` function tokenizes the input sentence and maps the tokens to the fields in the JSON data. It extracts the criteria based on the tokens.\n\n3. **Search Criteria Logging**: The script logs the extracted search criteria using the `logging` module for debugging purposes.\n\n4. **Filter the Documentation**: The function filters the loaded documentation based on the extracted criteria. It supports partial matches and handles both string and list fields.\n\n5. **Search and Display Results**: The script performs the search based on the input sentence and displays the matching results.\n\nThis approach leverages the structured documentation in JSON format to perform efficient searches, providing flexibility in handling various search queries."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "citations": [],
+            "gizmo_id": null,
+            "message_type": null,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "pad": "AAAAAAAAAAAAAAAAAA",
+            "parent_id": "bbb21878-61ef-404e-a0c5-b9b922deb7bb",
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                200002
+              ]
+            },
+            "is_complete": true,
+            "request_id": "88c685586d544039-MNL",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb21878-61ef-404e-a0c5-b9b922deb7bb",
+        "children": [
+          "bbb21479-2b16-450e-a8de-5ddb3e8e2bde"
+        ]
+      },
+      "bbb21479-2b16-450e-a8de-5ddb3e8e2bde": {
+        "id": "bbb21479-2b16-450e-a8de-5ddb3e8e2bde",
+        "message": {
+          "id": "bbb21479-2b16-450e-a8de-5ddb3e8e2bde",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717154013.030635,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "My main source is conversation conversations.json from ChatGPT "
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "88c68903d9dd4039-MNL",
+            "message_source": null,
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "468f60e1-5955-404f-8aa5-b9ed7382b090",
+        "children": [
+          "fd349c4d-9a61-48ed-bf55-079f23a981ac"
+        ]
+      },
+      "fd349c4d-9a61-48ed-bf55-079f23a981ac": {
+        "id": "fd349c4d-9a61-48ed-bf55-079f23a981ac",
+        "message": {
+          "id": "fd349c4d-9a61-48ed-bf55-079f23a981ac",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717154146.812917,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Got it. If your main source of data is a `conversations.json` file generated from ChatGPT interactions, we can adapt the script to read this JSON file and search through it based on common sentences. Here\u2019s a detailed guide:\n\n### Step 1: Create a Sample `conversations.json` File\n\nFirst, let's assume you have a `conversations.json` file with the following structure:\n\n```json\n[\n    {\n        \"function_name\": \"home\",\n        \"endpoint\": \"/\",\n        \"methods\": [\"GET\"],\n        \"description\": \"Home page\"\n    },\n    {\n        \"function_name\": \"login\",\n        \"endpoint\": \"/login\",\n        \"methods\": [\"GET\", \"POST\"],\n        \"description\": \"User login page\"\n    },\n    {\n        \"function_name\": \"logout\",\n        \"endpoint\": \"/logout\",\n        \"methods\": [\"POST\"],\n        \"description\": \"User logout\"\n    },\n    {\n        \"function_name\": \"profile\",\n        \"endpoint\": \"/profile\",\n        \"methods\": [\"GET\"],\n        \"description\": \"User profile page\"\n    }\n]\n```\n\n### Step 2: Load and Search the JSON File\n\nHere is a Python script that loads this `conversations.json` file and allows you to search for functions based on common sentences:\n\n```python\nimport json\nimport re\nimport logging\n\n# Configure logging\nlogging.basicConfig(level=logging.DEBUG)\n\ndef load_conversations(file_path):\n    \"\"\"Load the Flask function conversations from a JSON file.\"\"\"\n    with open(file_path, 'r') as file:\n        return json.load(file)\n\ndef search_flask_functions(conversations, sentence):\n    \"\"\"Search the Flask functions conversations based on a sentence.\"\"\"\n    # Define simple mappings from keywords to JSON fields\n    field_mappings = {\n        'function': 'function_name',\n        'endpoint': 'endpoint',\n        'method': 'methods',\n        'description': 'description'\n    }\n\n    # Tokenize the input sentence\n    tokens = sentence.lower().split()\n    \n    # Initialize search criteria\n    criteria = {}\n    \n    # Extract potential field-value pairs from the sentence\n    for i in range(len(tokens)):\n        if tokens[i] in field_mappings:\n            field = field_mappings[tokens[i]]\n            # Assume the next token is the value\n            if i + 1 < len(tokens):\n                value = tokens[i + 1]\n                if field == 'methods':\n                    criteria.setdefault(field, []).append(value.upper())\n                else:\n                    criteria[field] = value.lower()\n    \n    # Log the search criteria\n    logging.debug(f\"Search criteria: {criteria}\")\n    \n    # Filter the conversations based on the criteria\n    results = []\n    for func in conversations:\n        match = True\n        for field, value in criteria.items():\n            if field == 'methods':\n                # Check if any method matches\n                if not any(method.lower() == val.lower() for method in func[field] for val in value):\n                    match = False\n                    break\n            elif isinstance(func[field], list):\n                # Check list fields\n                if not any(val.lower() in item.lower() for item in func[field]):\n                    match = False\n                    break\n            else:\n                # Check string fields\n                if value not in func[field].lower():\n                    match = False\n                    break\n        if match:\n            results.append(func)\n    \n    return results\n\n# Load the conversations\nconversations = load_conversations('conversations.json')\n\n# Example usage\nsentence = \"function login method POST\"\nresults = search_flask_functions(conversations, sentence)\nfor row in results:\n    print(row)\n```\n\n### Explanation\n\n1. **Load Conversations**: The `load_conversations` function loads the JSON file containing the Flask function conversations.\n\n2. **Sentence Parsing and Criteria Extraction**: The `search_flask_functions` function tokenizes the input sentence and maps the tokens to the fields in the JSON data. It extracts the criteria based on the tokens.\n\n3. **Search Criteria Logging**: The script logs the extracted search criteria using the `logging` module for debugging purposes.\n\n4. **Filter the Conversations**: The function filters the loaded conversations based on the extracted criteria. It supports partial matches and handles both string and list fields.\n\n5. **Search and Display Results**: The script performs the search based on the input sentence and displays the matching results.\n\n### Example `conversations.json`\n\nFor the script to work, ensure you have a `conversations.json` file with a structure similar to the provided example.\n\n### Running the Script\n\nTo run the script, save it to a Python file (e.g., `search_flask_functions.py`), ensure your `conversations.json` is in the same directory, and execute the script:\n\n```sh\npython search_flask_functions.py\n```\n\nThe output will display the matching Flask functions based on the input sentence. This approach leverages the structured documentation in JSON format to perform efficient searches, providing flexibility in handling various search queries."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "citations": [],
+            "gizmo_id": null,
+            "message_type": null,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "pad": "AAAAAAAAAAAAAAA",
+            "parent_id": "bbb21479-2b16-450e-a8de-5ddb3e8e2bde",
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                200002
+              ]
+            },
+            "is_complete": true,
+            "request_id": "88c68903d9dd4039-MNL",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb21479-2b16-450e-a8de-5ddb3e8e2bde",
+        "children": [
+          "bbb21ed4-fe08-4b0f-98bc-d03e232d783a"
+        ]
+      },
+      "bbb21ed4-fe08-4b0f-98bc-d03e232d783a": {
+        "id": "bbb21ed4-fe08-4b0f-98bc-d03e232d783a",
+        "message": {
+          "id": "bbb21ed4-fe08-4b0f-98bc-d03e232d783a",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717154295.272774,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "I have converted the entire conversations.json to a very Hunan readable text and use usr as delimiters each session is e entered into the database "
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "88c68fe79c9a4039-MNL",
+            "message_source": null,
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "fd349c4d-9a61-48ed-bf55-079f23a981ac",
+        "children": [
+          "9b2d0677-93f6-48d0-bda5-15c5f5b77476"
+        ]
+      },
+      "9b2d0677-93f6-48d0-bda5-15c5f5b77476": {
+        "id": "9b2d0677-93f6-48d0-bda5-15c5f5b77476",
+        "message": {
+          "id": "9b2d0677-93f6-48d0-bda5-15c5f5b77476",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717154345.377037,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Given that your `conversations.json` has been converted into a human-readable text format with `usr` as delimiters for each session and stored in a database, you can create a Python script to search this database based on common sentences.\n\nHere\u2019s how you can achieve this:\n\n### Step 1: Set up the SQLite Database\n\nFirst, create the SQLite database and a table to store the session data.\n\n```python\nimport sqlite3\n\n# Connect to the SQLite database (or create it if it doesn't exist)\nconn = sqlite3.connect('conversations.db')\ncursor = conn.cursor()\n\n# Create a table for storing conversations\ncursor.execute('''\nCREATE TABLE IF NOT EXISTS sessions (\n    id INTEGER PRIMARY KEY,\n    session_text TEXT\n)\n''')\n\n# Example: Insert sample data (replace this with your actual data loading logic)\nsample_sessions = [\n    \"usr: Function: home\\nEndpoint: /\\nMethods: GET\\nDescription: Home page\",\n    \"usr: Function: login\\nEndpoint: /login\\nMethods: GET, POST\\nDescription: User login page\",\n    \"usr: Function: logout\\nEndpoint: /logout\\nMethods: POST\\nDescription: User logout\",\n    \"usr: Function: profile\\nEndpoint: /profile\\nMethods: GET\\nDescription: User profile page\"\n]\n\nfor session in sample_sessions:\n    cursor.execute(\"INSERT INTO sessions (session_text) VALUES (?)\", (session,))\n\n# Commit the changes and close the connection\nconn.commit()\nconn.close()\n```\n\n### Step 2: Define a Function to Search the Database\n\nNow, define a function to search the SQLite database based on a common sentence:\n\n```python\nimport sqlite3\nimport re\nimport logging\n\n# Configure logging\nlogging.basicConfig(level=logging.DEBUG)\n\ndef search_sessions(sentence):\n    # Connect to the SQLite database\n    conn = sqlite3.connect('conversations.db')\n    cursor = conn.cursor()\n\n    # Define simple mappings from keywords to search terms\n    field_mappings = {\n        'function': 'Function:',\n        'endpoint': 'Endpoint:',\n        'method': 'Methods:',\n        'description': 'Description:'\n    }\n\n    # Tokenize the input sentence\n    tokens = sentence.lower().split()\n    \n    # Initialize search criteria\n    criteria = {}\n\n    # Extract potential field-value pairs from the sentence\n    for i in range(len(tokens)):\n        if tokens[i] in field_mappings:\n            field = field_mappings[tokens[i]]\n            # Assume the next token is the value\n            if i + 1 < len(tokens):\n                value = tokens[i + 1]\n                if field == 'Methods:':\n                    criteria.setdefault(field, []).append(value.upper())\n                else:\n                    criteria[field] = value.lower()\n\n    # Log the search criteria\n    logging.debug(f\"Search criteria: {criteria}\")\n\n    # Fetch all sessions from the database\n    cursor.execute(\"SELECT session_text FROM sessions\")\n    sessions = cursor.fetchall()\n\n    # Filter sessions based on the criteria\n    results = []\n    for (session,) in sessions:\n        match = True\n        for field, value in criteria.items():\n            if field == 'Methods:':\n                # Check if any method matches\n                if not any(val.upper() in session for val in value):\n                    match = False\n                    break\n            else:\n                # Check string fields\n                if f\"{field} {value.capitalize()}\" not in session:\n                    match = False\n                    break\n        if match:\n            results.append(session)\n\n    # Close the connection\n    conn.close()\n\n    return results\n\n# Example usage\nsentence = \"function login method POST\"\nresults = search_sessions(sentence)\nfor row in results:\n    print(row)\n```\n\n### Explanation\n\n1. **Database Setup**: The script sets up an SQLite database with a table `sessions` and inserts some sample data. This table will store session data as text.\n\n2. **Sentence Parsing and Criteria Extraction**: The `search_sessions` function tokenizes the input sentence and maps the tokens to search terms in the session text.\n\n3. **Search Criteria Logging**: The script logs the extracted search criteria using the `logging` module for debugging purposes.\n\n4. **Fetch and Filter Sessions**: The function fetches all sessions from the database and filters them based on the extracted criteria. It supports partial matches and handles both string and list fields.\n\n5. **Search and Display Results**: The script performs the search based on the input sentence and displays the matching results.\n\n### Running the Script\n\nTo run the script, save it to a Python file (e.g., `search_sessions.py`), ensure your `conversations.db` is in the same directory, and execute the script:\n\n```sh\npython search_sessions.py\n```\n\nThe output will display the matching sessions based on the input sentence. This approach leverages the structured session data stored in the database to perform efficient searches, providing flexibility in handling various search queries."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "citations": [],
+            "gizmo_id": null,
+            "message_type": null,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "pad": "AAAAAAAAAAAAAAAAAAAAA",
+            "parent_id": "bbb21ed4-fe08-4b0f-98bc-d03e232d783a",
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                200002
+              ]
+            },
+            "is_complete": true,
+            "request_id": "88c68fe79c9a4039-MNL",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb21ed4-fe08-4b0f-98bc-d03e232d783a",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "9b2d0677-93f6-48d0-bda5-15c5f5b77476",
+    "plugin_ids": null,
+    "conversation_id": "dc3b9260-0130-496f-977a-28f383bb4e97",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "is_archived": false,
+    "safe_urls": [
+      "https://www.youtube.com/@mytubeaiflaskapp"
+    ],
+    "default_model_slug": "auto",
+    "id": "dc3b9260-0130-496f-977a-28f383bb4e97"
+  }
+]

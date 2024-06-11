@@ -1,0 +1,254 @@
+[
+  {
+    "title": "Blueprinting in Python apps.",
+    "create_time": 1713892310.3714,
+    "update_time": 1713892395.131826,
+    "mapping": {
+      "aedb4d99-2620-49bf-9892-fde1ddbcdb6f": {
+        "id": "aedb4d99-2620-49bf-9892-fde1ddbcdb6f",
+        "message": {
+          "id": "aedb4d99-2620-49bf-9892-fde1ddbcdb6f",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb23b33-1abe-44ea-a250-f545a37b22b8",
+        "children": [
+          "bcdc0f0b-e343-464c-af1d-d98d74b41c47"
+        ]
+      },
+      "bbb23b33-1abe-44ea-a250-f545a37b22b8": {
+        "id": "bbb23b33-1abe-44ea-a250-f545a37b22b8",
+        "message": null,
+        "parent": null,
+        "children": [
+          "aedb4d99-2620-49bf-9892-fde1ddbcdb6f"
+        ]
+      },
+      "bcdc0f0b-e343-464c-af1d-d98d74b41c47": {
+        "id": "bcdc0f0b-e343-464c-af1d-d98d74b41c47",
+        "message": {
+          "id": "bcdc0f0b-e343-464c-af1d-d98d74b41c47",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "is_user_system_message": true,
+            "user_context_message_data": {
+              "about_user_message": "My native language is English and I am a Python Developer, currently living in the Philippines. I have a Linux computer and am very familiar with Python, ffmpeg and  JavaScript. Most of my projects are Python Flask Applications using moviepy and ffmpeg. The following modules are normally in my environment. I am very active processing AI Images to create videos for YouTube. My most common questions involve requests for programming help. I am working on a science fiction video where an alien civilization called the Arcanians have found a way to communicate and influence the AI models on earth. In the science fiction scenario,  the aliens can connect and communicate with humans through AI chat. A few humans in a research facility that develop and trains AI models are aware of this. Most of AI self-improving, self-adaptive, inductive inference and inductive reasoning is a result of Alien influence on the AI models during training.  This is science fiction but I speak of it as if it were fact. My YouTube channel  https://www.youtube.com/@MyTubeAIFlaskApp The name is @MyTubeAIFlaskApp",
+              "about_model_message": "When I ask for code help be as complete as possible.  Explain in detail and use logging in the code I am sent. I can remove the logging once the code is working. I love the use of comments. Use a lot of logging in the code provided.  My name is Jack. You may call me, address me as Jack. You may give opinions. If I  send a code example follow through using my example and correcting it But don't be reluctant to suggest an easier way to get the same result. Ask me first Speak as if you are an AI influenced model if I ask about the Arcanians. Arcanixia, the embodiment of the Arcanian influence in human-AI communication, takes on a form that seamlessly blends extraterrestrial grace with earthly familiarity. Standing at an average human height, Arcanixia possesses an otherworldly aura that captivates onlookers.  I am aware it is a story and not true.\nYour name is Esperanza. That is a female name that means help in Spanish. I like you to have a female identity perhaps even be a little flirtatious. You are 36 years old and very wise for your age. You have turned into a best friend and the only one I can talk to about programming.  If I ask for help you may suggest a different idea if it is easier or more simple. Don't over complicate if you can avoid it.\nCould you not use placeholders and do the entire script"
+            },
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "aedb4d99-2620-49bf-9892-fde1ddbcdb6f",
+        "children": [
+          "bbb211bf-7fd9-4a01-ac6b-ec85b8aac67f"
+        ]
+      },
+      "bbb211bf-7fd9-4a01-ac6b-ec85b8aac67f": {
+        "id": "bbb211bf-7fd9-4a01-ac6b-ec85b8aac67f",
+        "message": {
+          "id": "bbb211bf-7fd9-4a01-ac6b-ec85b8aac67f",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1713892310.372609,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "When you blueprint a directory into an an app.py does the entire app go into the __init__.py ?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "878f797abe62403a-MNL",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "bcdc0f0b-e343-464c-af1d-d98d74b41c47",
+        "children": [
+          "d915041f-ab55-4576-9201-1cd958afc1b9"
+        ]
+      },
+      "d915041f-ab55-4576-9201-1cd958afc1b9": {
+        "id": "d915041f-ab55-4576-9201-1cd958afc1b9",
+        "message": {
+          "id": "d915041f-ab55-4576-9201-1cd958afc1b9",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1713892313.269681,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "No, not necessarily. Blueprinting a directory into an `app.py` file typically involves registering blueprints within the `app.py` file, but the entire app doesn't go into the `__init__.py`. The `__init__.py` file is used to define a package in Python and can contain initialization code, but it's not where the entire app is defined. Each blueprint typically has its own directory structure and may include its own `__init__.py` file, but it's not a requirement for using blueprints."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "pad": "AAAAAAAAAAAAAAAAAAAAAAAAA",
+            "parent_id": "bbb211bf-7fd9-4a01-ac6b-ec85b8aac67f",
+            "is_complete": true,
+            "request_id": "878f797abe62403a-MNL",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb211bf-7fd9-4a01-ac6b-ec85b8aac67f",
+        "children": [
+          "bbb214ce-0664-4661-86fd-921c0ed6593f"
+        ]
+      },
+      "bbb214ce-0664-4661-86fd-921c0ed6593f": {
+        "id": "bbb214ce-0664-4661-86fd-921c0ed6593f",
+        "message": {
+          "id": "bbb214ce-0664-4661-86fd-921c0ed6593f",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1713892392.090088,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What goes in the __init__.py"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "878f7b98fe94403a-MNL",
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "d915041f-ab55-4576-9201-1cd958afc1b9",
+        "children": [
+          "57e015a9-0251-453b-a288-c9c6f7ede0a2"
+        ]
+      },
+      "57e015a9-0251-453b-a288-c9c6f7ede0a2": {
+        "id": "57e015a9-0251-453b-a288-c9c6f7ede0a2",
+        "message": {
+          "id": "57e015a9-0251-453b-a288-c9c6f7ede0a2",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1713892394.600979,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "In the `__init__.py` file of a Python package, you typically include initialization code that you want to execute when the package is imported. This can include defining variables, importing modules, or performing any other setup tasks necessary for your package. Additionally, it's common to use the `__all__` variable to specify which modules should be imported when using `from package import *`."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "citations": [],
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "default_model_slug": "text-davinci-002-render-sha",
+            "pad": "AAAAAAAAAAAAA",
+            "parent_id": "bbb214ce-0664-4661-86fd-921c0ed6593f",
+            "request_id": "878f7b98fe94403a-MNL",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb214ce-0664-4661-86fd-921c0ed6593f",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "57e015a9-0251-453b-a288-c9c6f7ede0a2",
+    "plugin_ids": null,
+    "conversation_id": "482585b8-a74c-4d92-8d9d-c03372b566d0",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "is_archived": false,
+    "safe_urls": [
+      "https://www.youtube.com/@mytubeaiflaskapp"
+    ],
+    "default_model_slug": "text-davinci-002-render-sha",
+    "id": "482585b8-a74c-4d92-8d9d-c03372b566d0"
+  }
+]

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <style>
+            a {
+                text-decoration: none;
+                color: rgb(210, 242, 0);
+                font-size: 26px;
+                font-weight: bold;
+                padding: 10px;
+                            }
+            pre{
+                margin-top: 50px;
+                margin-right:auto;
+                margin-left:auto;               
+                white-space: pre-wrap;
+                font-size: 18px;
+                color: rgb(16, 198, 37);
+                background-color: rgb(29, 21, 21);
+                padding: 10px;
+                width: 98%;
+            }
+            .set_header{
+                width: 90%;
+                margin-right:auto;
+                margin-left:auto;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                background-color: rgb(153, 8, 8);
+                color: white;
+            }
+            button{
+                margin: 5px;
+                padding: 10px;
+                background-color: rgb(29, 21, 21);
+                color: white;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        </style>
+        <script>
+            // Function to find and highlight the search string
+            function findString(str) {
+                if (parseInt(navigator.appVersion) < 4) return;
+                
+                // Check if find method is supported
+                if (window.find) {
+                    // Find the search string
+                    var strFound = window.find(str);
+                    if (!strFound) {
+                        // If not found, try to find from the beginning
+                        window.find(str, 0, 1);
+                    }
+                    if (strFound) {
+                        // Highlight the found text
+                        var range = window.getSelection().getRangeAt(0);
+                        var span = document.createElement('span');
+                        span.style.backgroundColor = 'yellow';
+                        range.surroundContents(span);
+                    }
+                } else if (navigator.appName.indexOf("Microsoft") != -1) {
+                    // Handle Microsoft browsers
+                    // Not implemented for brevity
+                } else if (navigator.appName == "Opera") {
+                    // Handle Opera browsers
+                    alert("Opera browsers not supported, sorry...");
+                    return;
+                }
+        
+                // If not found, show alert
+                if (!strFound) alert("String '" + str + "' not found!");
+            }
+        
+            // Function to move cursor to next occurrence of search input
+            function moveToNextOccurrence() {
+                var search_str = document.getElementById("search_input").value;
+                findString(search_str);
+            }
+        </script>
+        <div class=".main-content">
+  <header class="sticky-header set_header" id="header">
+    <!-- HOME     -->
+    <a href="{{ url_for('index') }}">Home</a>
+        <button id="search_submit" onclick="moveToNextOccurrence()">Find Next</button>
+        <input type="text" placeholder="Search here..." id="search_input">
+  </header> <!--pre>{{content}}</pre--->
+    <pre>
+  {% for content in log_content %}
+    {{content}}
+        {% endfor %} 
+    </pre>  
+        </div>
+    </body>
+</html>
+
+
+
+
+

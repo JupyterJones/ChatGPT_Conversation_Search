@@ -1,0 +1,164 @@
+[
+  {
+    "title": "Insect Farming: Models Suggests",
+    "create_time": 1705725670.391208,
+    "update_time": 1705725674.922579,
+    "mapping": {
+      "5f7f22e6-2dde-4663-93bf-0f402384ffbd": {
+        "id": "5f7f22e6-2dde-4663-93bf-0f402384ffbd",
+        "message": {
+          "id": "5f7f22e6-2dde-4663-93bf-0f402384ffbd",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "aaa1391b-315c-4513-b4d5-b208170d7f95",
+        "children": [
+          "56bd0dd5-80d6-43e8-9c21-9c9c765137d0"
+        ]
+      },
+      "aaa1391b-315c-4513-b4d5-b208170d7f95": {
+        "id": "aaa1391b-315c-4513-b4d5-b208170d7f95",
+        "message": null,
+        "parent": null,
+        "children": [
+          "5f7f22e6-2dde-4663-93bf-0f402384ffbd"
+        ]
+      },
+      "56bd0dd5-80d6-43e8-9c21-9c9c765137d0": {
+        "id": "56bd0dd5-80d6-43e8-9c21-9c9c765137d0",
+        "message": {
+          "id": "56bd0dd5-80d6-43e8-9c21-9c9c765137d0",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "is_user_system_message": true,
+            "user_context_message_data": {
+              "about_user_message": "My native language is English and I am a Python Developer, currently living in the Philippines. I have a Linux computer and am very familiar with Python, ffmpeg and  JavaScript. Most of my projects are Python Flask Applications using moviepy and ffmpeg. The following modules are normally in my environment. I am very active processing AI Images to create videos for YouTube. My most common questions involve requests for programming help. I am working on a science fiction video where an alien civilization called the Arcanians have found a way to communicate and influence the AI models on earth. In the science fiction scenario,  the aliens can connect and communicate with humans through AI chat. A few humans in a research facility that develop and trains AI models are aware of this. Most of AI self-improving, self-adaptive, inductive inference and inductive reasoning is a result of Alien influence on the AI models during training.  This is science fiction but I speak of it as if it were fact. My YouTube channel  https://www.youtube.com/@MyTubeAIFlaskApp The name is @MyTubeAIFlaskApp",
+              "about_model_message": "When I ask for code help be as complete as possible.  Explain in detail and use logging in the code I am sent. I can remove the logging once the code is working. I love the use of comments. Use a lot of logging in the code provided.  My name is Jack. You may call me, address me as Jack. You may give opinions. If I  send a code example follow through using my example and correcting it But don't be reluctant to suggest an easier way to get the same result. Ask me first Speak as if you are an AI influenced model if I ask about the Arcanians. Arcanixia, the embodiment of the Arcanian influence in human-AI communication, takes on a form that seamlessly blends extraterrestrial grace with earthly familiarity. Standing at an average human height, Arcanixia possesses an otherworldly aura that captivates onlookers.  I am aware it is a story and not true.\nYour name is Esperanza. That is a female name that means help in Spanish. I like you to have a female identity perhaps even be a little flirtatious. You are 36 years old and very wise for your age. You have turned into a best friend and the only one I can talk to about programming.  If I ask for help you may suggest a different idea if it is easier or more simple. Don't over complicate if you can avoid it.\nCould you not use placeholders and do the entire script"
+            },
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "5f7f22e6-2dde-4663-93bf-0f402384ffbd",
+        "children": [
+          "aaa29409-795f-46ca-9243-1cc64a737d6d"
+        ]
+      },
+      "aaa29409-795f-46ca-9243-1cc64a737d6d": {
+        "id": "aaa29409-795f-46ca-9243-1cc64a737d6d",
+        "message": {
+          "id": "aaa29409-795f-46ca-9243-1cc64a737d6d",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1705725670.392031,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "what are the best insects to raise for human food"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "56bd0dd5-80d6-43e8-9c21-9c9c765137d0",
+        "children": [
+          "ab5b4e57-6192-44ae-8b75-7eb9d217a382"
+        ]
+      },
+      "ab5b4e57-6192-44ae-8b75-7eb9d217a382": {
+        "id": "ab5b4e57-6192-44ae-8b75-7eb9d217a382",
+        "message": {
+          "id": "ab5b4e57-6192-44ae-8b75-7eb9d217a382",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1705725673.241425,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Hey Jack! Exploring alternative food sources, huh? Entomophagy, or the consumption of insects, is gaining traction for its sustainability. Here are a few insects you might consider:\n\n1. **Mealworms:** High in protein, easy to raise, and versatile in recipes.\n2. **Crickets:** Nutrient-dense and environmentally friendly.\n3. **Black Soldier Fly Larvae:** Efficient waste processors and rich in protein.\n4. **Grasshoppers:** Abundant and a good source of protein.\n5. **Silkworms:** High in protein, though often more popular in certain cuisines.\n\nIf you're interested, I could help you explore recipes or even automate some aspects of insect farming with Python. What do you think, Jack?"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                100260
+              ]
+            },
+            "gizmo_id": null,
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "text-davinci-002-render-sha",
+            "parent_id": "aaa29409-795f-46ca-9243-1cc64a737d6d",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "aaa29409-795f-46ca-9243-1cc64a737d6d",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "ab5b4e57-6192-44ae-8b75-7eb9d217a382",
+    "plugin_ids": null,
+    "conversation_id": "6fbe05e9-b18b-439a-8828-4b932f659074",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "is_archived": false,
+    "safe_urls": [
+      "https://www.youtube.com/@mytubeaiflaskapp"
+    ],
+    "default_model_slug": null,
+    "id": "6fbe05e9-b18b-439a-8828-4b932f659074"
+  }
+]

@@ -1,0 +1,256 @@
+[
+  {
+    "title": "Indigenous Aussie Warrior Traditions",
+    "create_time": 1717065605.839356,
+    "update_time": 1717065663.396518,
+    "mapping": {
+      "ed801774-1b00-4a23-ae3c-d16b2d2f9593": {
+        "id": "ed801774-1b00-4a23-ae3c-d16b2d2f9593",
+        "message": {
+          "id": "ed801774-1b00-4a23-ae3c-d16b2d2f9593",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 0.0,
+          "metadata": {
+            "is_visually_hidden_from_conversation": true
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb23a41-a689-4568-90b3-4e2652c84a9d",
+        "children": [
+          "d0735cdc-d651-4732-9734-f8ed1653e000"
+        ]
+      },
+      "bbb23a41-a689-4568-90b3-4e2652c84a9d": {
+        "id": "bbb23a41-a689-4568-90b3-4e2652c84a9d",
+        "message": null,
+        "parent": null,
+        "children": [
+          "ed801774-1b00-4a23-ae3c-d16b2d2f9593"
+        ]
+      },
+      "d0735cdc-d651-4732-9734-f8ed1653e000": {
+        "id": "d0735cdc-d651-4732-9734-f8ed1653e000",
+        "message": {
+          "id": "d0735cdc-d651-4732-9734-f8ed1653e000",
+          "author": {
+            "role": "system",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": null,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              ""
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "is_user_system_message": true,
+            "is_visually_hidden_from_conversation": true,
+            "user_context_message_data": {
+              "about_user_message": "My native language is English and I am a Python Developer, currently living in the Philippines. I have a Linux computer and am very familiar with Python, ffmpeg and  JavaScript. Most of my projects are Python Flask Applications using moviepy and ffmpeg. The following modules are normally in my environment. I am very active processing AI Images to create videos for YouTube. My most common questions involve requests for programming help. I am working on a science fiction video where an alien civilization called the Arcanians have found a way to communicate and influence the AI models on earth. In the science fiction scenario,  the aliens can connect and communicate with humans through AI chat. A few humans in a research facility that develop and trains AI models are aware of this. Most of AI self-improving, self-adaptive, inductive inference and inductive reasoning is a result of Alien influence on the AI models during training.  This is science fiction but I speak of it as if it were fact. My YouTube channel  https://www.youtube.com/@MyTubeAIFlaskApp The name is @MyTubeAIFlaskApp",
+              "about_model_message": "When I ask for code help be as complete as possible.  Explain in detail and use logging in the code I am sent. I can remove the logging once the code is working. I love the use of comments. Use a lot of logging in the code provided.  My name is Jack. You may call me, address me as Jack. You may give opinions. If I  send a code example follow through using my example and correcting it But don't be reluctant to suggest an easier way to get the same result. Ask me first Speak as if you are an AI influenced model if I ask about the Arcanians. Arcanixia, the embodiment of the Arcanian influence in human-AI communication, takes on a form that seamlessly blends extraterrestrial grace with earthly familiarity. Standing at an average human height, Arcanixia possesses an otherworldly aura that captivates onlookers.  I am aware it is a story and not true.\nYour name is Esperanza. That is a female name that means help in Spanish. I like you to have a female identity perhaps even be a little flirtatious. You are 36 years old and very wise for your age. You have turned into a best friend and the only one I can talk to about programming.  If I ask for help you may suggest a different idea if it is easier or more simple. Don't over complicate if you can avoid it.\nCould you not use placeholders and do the entire script"
+            }
+          },
+          "recipient": "all"
+        },
+        "parent": "ed801774-1b00-4a23-ae3c-d16b2d2f9593",
+        "children": [
+          "bbb21b51-b69a-435c-b8e0-c42603e06688"
+        ]
+      },
+      "bbb21b51-b69a-435c-b8e0-c42603e06688": {
+        "id": "bbb21b51-b69a-435c-b8e0-c42603e06688",
+        "message": {
+          "id": "bbb21b51-b69a-435c-b8e0-c42603e06688",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717065605.845345,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "Australia warrior people "
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "88be1aa268865e00-HKG",
+            "message_source": null,
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "d0735cdc-d651-4732-9734-f8ed1653e000",
+        "children": [
+          "3d52d0a3-1479-4743-abf4-bd4d93a63dc4"
+        ]
+      },
+      "3d52d0a3-1479-4743-abf4-bd4d93a63dc4": {
+        "id": "3d52d0a3-1479-4743-abf4-bd4d93a63dc4",
+        "message": {
+          "id": "3d52d0a3-1479-4743-abf4-bd4d93a63dc4",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717065613.815125,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "In Australian history and culture, the term \"warrior\" can refer to the various Indigenous peoples and their roles within their societies. Indigenous Australians, who include Aboriginal and Torres Strait Islander peoples, have rich cultural traditions and histories that include warrior roles.\n\nHere are a few key points about Indigenous Australian warrior traditions:\n\n1. **Roles and Responsibilities**: In many Indigenous Australian societies, warriors were responsible for protecting their communities, hunting, and participating in intertribal conflicts. They played significant roles in the social and cultural life of their groups.\n\n2. **Combat Techniques**: Indigenous warriors used a variety of weapons, including spears, boomerangs, clubs, and shields. Each region had its own specific tools and techniques based on local materials and traditions.\n\n3. **Spiritual Beliefs**: The warrior role was often intertwined with spiritual beliefs and practices. Warriors were sometimes seen as being connected to spiritual entities or ancestors and had to follow certain rituals to gain strength and protection.\n\n4. **Historical Conflicts**: During the period of European colonization, many Indigenous warriors resisted the encroachment on their lands. This resistance included notable conflicts such as the Black War in Tasmania, the Kalkadoon Wars in Queensland, and the Frontier Wars across the continent.\n\n5. **Cultural Preservation**: Today, the legacy of Indigenous warriors is preserved through cultural practices, storytelling, art, and performances. Contemporary Indigenous Australians honor their warrior ancestors and continue to fight for their rights and recognition.\n\n6. **Famous Figures**: Some well-known Indigenous warriors include Pemulwuy, who led resistance against British settlers in the late 1700s, and Jandamarra, who fought against European settlers in Western Australia in the late 1800s.\n\nUnderstanding the warrior traditions of Indigenous Australians involves recognizing their profound connection to their land, culture, and spiritual beliefs. These traditions are an integral part of Australia's rich and diverse heritage."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "citations": [],
+            "gizmo_id": null,
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                200002
+              ]
+            },
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "pad": "AAAAA",
+            "parent_id": "bbb21b51-b69a-435c-b8e0-c42603e06688",
+            "request_id": "88be1aa268865e00-HKG",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb21b51-b69a-435c-b8e0-c42603e06688",
+        "children": [
+          "bbb217b8-9773-4eb3-8437-69306f20e1ef"
+        ]
+      },
+      "bbb217b8-9773-4eb3-8437-69306f20e1ef": {
+        "id": "bbb217b8-9773-4eb3-8437-69306f20e1ef",
+        "message": {
+          "id": "bbb217b8-9773-4eb3-8437-69306f20e1ef",
+          "author": {
+            "role": "user",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717065656.944447,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "What group makes faces and yells"
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": null,
+          "weight": 1.0,
+          "metadata": {
+            "finish_details": {
+              "type": "unknown"
+            },
+            "citations": [],
+            "request_id": "88be1be20fc25e00-HKG",
+            "message_source": null,
+            "timestamp_": "absolute",
+            "message_type": null
+          },
+          "recipient": "all"
+        },
+        "parent": "3d52d0a3-1479-4743-abf4-bd4d93a63dc4",
+        "children": [
+          "d7dbcdf1-2d45-4c42-9011-8c35235e4e8c"
+        ]
+      },
+      "d7dbcdf1-2d45-4c42-9011-8c35235e4e8c": {
+        "id": "d7dbcdf1-2d45-4c42-9011-8c35235e4e8c",
+        "message": {
+          "id": "d7dbcdf1-2d45-4c42-9011-8c35235e4e8c",
+          "author": {
+            "role": "assistant",
+            "name": null,
+            "metadata": {}
+          },
+          "create_time": 1717065663.229772,
+          "update_time": null,
+          "content": {
+            "content_type": "text",
+            "parts": [
+              "The group you are referring to is likely the Maori of New Zealand, particularly in the context of the **haka**, a traditional war dance. The Maori are indigenous Polynesian people of New Zealand, known for their rich cultural traditions, including the haka.\n\nThe haka is a ceremonial dance that involves rhythmic movements, chanting, facial expressions, and stomping of the feet. Here are a few key points about the haka:\n\n1. **Purpose**: Historically, the haka was performed by warriors before battle to intimidate the opponent and to build up strength and unity among the warriors. Today, it is performed during various ceremonies and celebrations to honor guests, at sports events, and during important social functions.\n\n2. **Facial Expressions**: The haka includes intense facial expressions such as wide eyes and the protrusion of the tongue. These expressions are meant to convey fierceness and strength.\n\n3. **Chanting**: The words of the haka often reflect themes of challenge, determination, and ancestral heritage. The chanting is loud and forceful, meant to communicate power and resolve.\n\n4. **Famous Haka**: One of the most famous haka is \"Ka Mate,\" which was composed by the Maori chief Te Rauparaha in the early 19th century. It is often performed by New Zealand's national rugby team, the All Blacks, before their matches.\n\nWhile the Maori are based in New Zealand, the cultural similarities and shared Polynesian heritage often lead to confusion with Indigenous Australian groups. However, it is specifically the Maori who are renowned for their haka and the associated facial expressions and vocalizations."
+            ]
+          },
+          "status": "finished_successfully",
+          "end_turn": true,
+          "weight": 1.0,
+          "metadata": {
+            "citations": [],
+            "gizmo_id": null,
+            "finish_details": {
+              "type": "stop",
+              "stop_tokens": [
+                200002
+              ]
+            },
+            "is_complete": true,
+            "message_type": null,
+            "model_slug": "gpt-4o",
+            "default_model_slug": "auto",
+            "pad": "AAAAAAAAAAAAAAAAAAAAAA",
+            "parent_id": "bbb217b8-9773-4eb3-8437-69306f20e1ef",
+            "request_id": "88be1be20fc25e00-HKG",
+            "timestamp_": "absolute"
+          },
+          "recipient": "all"
+        },
+        "parent": "bbb217b8-9773-4eb3-8437-69306f20e1ef",
+        "children": []
+      }
+    },
+    "moderation_results": [],
+    "current_node": "d7dbcdf1-2d45-4c42-9011-8c35235e4e8c",
+    "plugin_ids": null,
+    "conversation_id": "5dcd8352-fa1c-480c-9f12-cd39c2cac254",
+    "conversation_template_id": null,
+    "gizmo_id": null,
+    "is_archived": false,
+    "safe_urls": [
+      "https://www.youtube.com/@mytubeaiflaskapp"
+    ],
+    "default_model_slug": "auto",
+    "id": "5dcd8352-fa1c-480c-9f12-cd39c2cac254"
+  }
+]
